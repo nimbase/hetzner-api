@@ -1,0 +1,24 @@
+nimTitle	metaclient	hetzner/private/metaclient.html	module hetzner/private/metaclient		0
+nim	HetznerClient	hetzner/private/metaclient.html#HetznerClient	type HetznerClient		18
+nim	QueryTable	hetzner/private/metaclient.html#QueryTable	type QueryTable		23
+nim	HetznerClientError	hetzner/private/metaclient.html#HetznerClientError	object HetznerClientError		25
+nim	`$`	hetzner/private/metaclient.html#$,QueryTable	proc `$`(query: QueryTable): string		27
+nim	initHetznerClient	hetzner/private/metaclient.html#initHetznerClient,string	proc initHetznerClient(apiKey: string): HetznerClient		32
+nim	httpGet	hetzner/private/metaclient.html#httpGet,HetznerClient,string	proc httpGet(client: HetznerClient; endpoint: string): Future[AsyncResponse]		43
+nim	httpGet	hetzner/private/metaclient.html#httpGet,HetznerClient,string,QueryTable	proc httpGet(client: HetznerClient; endpoint: string; query: QueryTable): Future[\n    AsyncResponse]		48
+nim	httpPost	hetzner/private/metaclient.html#httpPost,HetznerClient,string,T	proc httpPost[T](client: HetznerClient; endpoint: string; body: T): Future[\n    AsyncResponse]		53
+nim	httpPost	hetzner/private/metaclient.html#httpPost,HetznerClient,string	proc httpPost(client: HetznerClient; endpoint: string): Future[AsyncResponse]		58
+nim	httpPost	hetzner/private/metaclient.html#httpPost,HetznerClient,string,QueryTable	proc httpPost(client: HetznerClient; endpoint: string; query: QueryTable): Future[\n    AsyncResponse]		63
+nim	httpPut	hetzner/private/metaclient.html#httpPut,HetznerClient,string,T	proc httpPut[T](client: HetznerClient; endpoint: string; body: T): Future[\n    AsyncResponse]		68
+nim	httpPut	hetzner/private/metaclient.html#httpPut,HetznerClient,string	proc httpPut(client: HetznerClient; endpoint: string): Future[AsyncResponse]		74
+nim	httpPut	hetzner/private/metaclient.html#httpPut,HetznerClient,string,QueryTable	proc httpPut(client: HetznerClient; endpoint: string; query: QueryTable): Future[\n    AsyncResponse]		79
+nim	httpDelete	hetzner/private/metaclient.html#httpDelete,HetznerClient,string,T	proc httpDelete[T](client: HetznerClient; endpoint: string; body: T): Future[\n    AsyncResponse]		84
+nim	httpDelete	hetzner/private/metaclient.html#httpDelete,HetznerClient,string	proc httpDelete(client: HetznerClient; endpoint: string): Future[AsyncResponse]		90
+nim	httpDelete	hetzner/private/metaclient.html#httpDelete,HetznerClient,string,QueryTable	proc httpDelete(client: HetznerClient; endpoint: string; query: QueryTable): Future[\n    AsyncResponse]		95
+nim	httpPatch	hetzner/private/metaclient.html#httpPatch,HetznerClient,string,T	proc httpPatch[T](client: HetznerClient; endpoint: string; body: T): Future[\n    AsyncResponse]		100
+nim	httpPatch	hetzner/private/metaclient.html#httpPatch,HetznerClient,string	proc httpPatch(client: HetznerClient; endpoint: string): Future[AsyncResponse]		106
+nimgrp	httpput	hetzner/private/metaclient.html#httpPut-procs-all	proc		67
+nimgrp	httppost	hetzner/private/metaclient.html#httpPost-procs-all	proc		52
+nimgrp	httpdelete	hetzner/private/metaclient.html#httpDelete-procs-all	proc		83
+nimgrp	httpget	hetzner/private/metaclient.html#httpGet-procs-all	proc		42
+nimgrp	httppatch	hetzner/private/metaclient.html#httpPatch-procs-all	proc		99

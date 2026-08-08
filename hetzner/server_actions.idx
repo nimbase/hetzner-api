@@ -1,0 +1,74 @@
+nimTitle	server_actions	hetzner/server_actions.html	module hetzner/server_actions		0
+nim	GetServersIdActionsResponse	hetzner/server_actions.html#GetServersIdActionsResponse	object GetServersIdActionsResponse		12
+nim	PostServersIdActionsAddToPlacementGroupResponse	hetzner/server_actions.html#PostServersIdActionsAddToPlacementGroupResponse	object PostServersIdActionsAddToPlacementGroupResponse		17
+nim	PostServersIdActionsAttachIsoResponse	hetzner/server_actions.html#PostServersIdActionsAttachIsoResponse	object PostServersIdActionsAttachIsoResponse		21
+nim	PostServersIdActionsAttachToNetworkResponse	hetzner/server_actions.html#PostServersIdActionsAttachToNetworkResponse	object PostServersIdActionsAttachToNetworkResponse		27
+nim	PostServersIdActionsChangeAliasIpsResponse	hetzner/server_actions.html#PostServersIdActionsChangeAliasIpsResponse	object PostServersIdActionsChangeAliasIpsResponse		32
+nim	PostServersIdActionsChangeDnsPtrResponse	hetzner/server_actions.html#PostServersIdActionsChangeDnsPtrResponse	object PostServersIdActionsChangeDnsPtrResponse		37
+nim	PostServersIdActionsChangeProtectionResponse	hetzner/server_actions.html#PostServersIdActionsChangeProtectionResponse	object PostServersIdActionsChangeProtectionResponse		42
+nim	PostServersIdActionsChangeTypeResponse	hetzner/server_actions.html#PostServersIdActionsChangeTypeResponse	object PostServersIdActionsChangeTypeResponse		47
+nim	PostServersIdActionsCreateImageResponse	hetzner/server_actions.html#PostServersIdActionsCreateImageResponse	object PostServersIdActionsCreateImageResponse		53
+nim	PostServersIdActionsDetachFromNetworkResponse	hetzner/server_actions.html#PostServersIdActionsDetachFromNetworkResponse	object PostServersIdActionsDetachFromNetworkResponse		58
+nim	PostServersIdActionsDetachIsoResponse	hetzner/server_actions.html#PostServersIdActionsDetachIsoResponse	object PostServersIdActionsDetachIsoResponse		60
+nim	PostServersIdActionsDisableBackupResponse	hetzner/server_actions.html#PostServersIdActionsDisableBackupResponse	object PostServersIdActionsDisableBackupResponse		62
+nim	PostServersIdActionsDisableRescueResponse	hetzner/server_actions.html#PostServersIdActionsDisableRescueResponse	object PostServersIdActionsDisableRescueResponse		64
+nim	PostServersIdActionsEnableBackupResponse	hetzner/server_actions.html#PostServersIdActionsEnableBackupResponse	object PostServersIdActionsEnableBackupResponse		66
+nim	PostServersIdActionsEnableRescueResponse	hetzner/server_actions.html#PostServersIdActionsEnableRescueResponse	object PostServersIdActionsEnableRescueResponse		71
+nim	PostServersIdActionsPoweroffResponse	hetzner/server_actions.html#PostServersIdActionsPoweroffResponse	object PostServersIdActionsPoweroffResponse		75
+nim	PostServersIdActionsPoweronResponse	hetzner/server_actions.html#PostServersIdActionsPoweronResponse	object PostServersIdActionsPoweronResponse		77
+nim	PostServersIdActionsRebootResponse	hetzner/server_actions.html#PostServersIdActionsRebootResponse	object PostServersIdActionsRebootResponse		79
+nim	PostServersIdActionsRebuildResponse	hetzner/server_actions.html#PostServersIdActionsRebuildResponse	object PostServersIdActionsRebuildResponse		83
+nim	PostServersIdActionsRemoveFromPlacementGroupResponse	hetzner/server_actions.html#PostServersIdActionsRemoveFromPlacementGroupResponse	object PostServersIdActionsRemoveFromPlacementGroupResponse		87
+nim	PostServersIdActionsRequestConsoleResponse	hetzner/server_actions.html#PostServersIdActionsRequestConsoleResponse	object PostServersIdActionsRequestConsoleResponse		89
+nim	PostServersIdActionsResetResponse	hetzner/server_actions.html#PostServersIdActionsResetResponse	object PostServersIdActionsResetResponse		97
+nim	PostServersIdActionsResetPasswordResponse	hetzner/server_actions.html#PostServersIdActionsResetPasswordResponse	object PostServersIdActionsResetPasswordResponse		99
+nim	PostServersIdActionsShutdownResponse	hetzner/server_actions.html#PostServersIdActionsShutdownResponse	object PostServersIdActionsShutdownResponse		103
+nim	GetServersIdActionsActionIdResponse	hetzner/server_actions.html#GetServersIdActionsActionIdResponse	object GetServersIdActionsActionIdResponse		105
+nim	sortId	hetzner/server_actions.html#sortId	ServerActionSortOption.sortId		107
+nim	sortIdAsc	hetzner/server_actions.html#sortIdAsc	ServerActionSortOption.sortIdAsc		107
+nim	sortIdDesc	hetzner/server_actions.html#sortIdDesc	ServerActionSortOption.sortIdDesc		107
+nim	sortCommand	hetzner/server_actions.html#sortCommand	ServerActionSortOption.sortCommand		107
+nim	sortCommandAsc	hetzner/server_actions.html#sortCommandAsc	ServerActionSortOption.sortCommandAsc		107
+nim	sortCommandDesc	hetzner/server_actions.html#sortCommandDesc	ServerActionSortOption.sortCommandDesc		107
+nim	sortStatus	hetzner/server_actions.html#sortStatus	ServerActionSortOption.sortStatus		107
+nim	sortStatusAsc	hetzner/server_actions.html#sortStatusAsc	ServerActionSortOption.sortStatusAsc		107
+nim	sortStatusDesc	hetzner/server_actions.html#sortStatusDesc	ServerActionSortOption.sortStatusDesc		107
+nim	sortProgress	hetzner/server_actions.html#sortProgress	ServerActionSortOption.sortProgress		107
+nim	sortProgressAsc	hetzner/server_actions.html#sortProgressAsc	ServerActionSortOption.sortProgressAsc		107
+nim	sortProgressDesc	hetzner/server_actions.html#sortProgressDesc	ServerActionSortOption.sortProgressDesc		107
+nim	sortStarted	hetzner/server_actions.html#sortStarted	ServerActionSortOption.sortStarted		107
+nim	sortStartedAsc	hetzner/server_actions.html#sortStartedAsc	ServerActionSortOption.sortStartedAsc		107
+nim	sortStartedDesc	hetzner/server_actions.html#sortStartedDesc	ServerActionSortOption.sortStartedDesc		107
+nim	sortFinished	hetzner/server_actions.html#sortFinished	ServerActionSortOption.sortFinished		107
+nim	sortFinishedAsc	hetzner/server_actions.html#sortFinishedAsc	ServerActionSortOption.sortFinishedAsc		107
+nim	sortFinishedDesc	hetzner/server_actions.html#sortFinishedDesc	ServerActionSortOption.sortFinishedDesc		107
+nim	ServerActionSortOption	hetzner/server_actions.html#ServerActionSortOption	enum ServerActionSortOption		107
+nim	statusRunning	hetzner/server_actions.html#statusRunning	ServerActionStatusOption.statusRunning		127
+nim	statusSuccess	hetzner/server_actions.html#statusSuccess	ServerActionStatusOption.statusSuccess		127
+nim	statusError	hetzner/server_actions.html#statusError	ServerActionStatusOption.statusError		127
+nim	ServerActionStatusOption	hetzner/server_actions.html#ServerActionStatusOption	enum ServerActionStatusOption		127
+nim	getServersIdActions	hetzner/server_actions.html#getServersIdActions,HetznerClient,int64,set[ServerActionSortOption],set[ServerActionStatusOption]	proc getServersIdActions(client: HetznerClient; id: int64;\n                    sort: set[ServerActionSortOption] = {};\n                    status: set[ServerActionStatusOption] = {}): Future[\n    GetServersIdActionsResponse]		135
+nim	postServersIdActionsAddToPlacementGroup	hetzner/server_actions.html#postServersIdActionsAddToPlacementGroup,HetznerClient,int64,PostServersIdActionsAddToPlacementGroupRequest	proc postServersIdActionsAddToPlacementGroup(client: HetznerClient; id: int64; body: PostServersIdActionsAddToPlacementGroupRequest): Future[\n    PostServersIdActionsAddToPlacementGroupResponse]		151
+nim	postServersIdActionsAttachIso	hetzner/server_actions.html#postServersIdActionsAttachIso,HetznerClient,int64,PostServersIdActionsAttachIsoRequest	proc postServersIdActionsAttachIso(client: HetznerClient; id: int64;\n                              body: PostServersIdActionsAttachIsoRequest): Future[\n    PostServersIdActionsAttachIsoResponse]		174
+nim	postServersIdActionsAttachToNetwork	hetzner/server_actions.html#postServersIdActionsAttachToNetwork,HetznerClient,int64,PostServersIdActionsAttachToNetworkRequest	proc postServersIdActionsAttachToNetwork(client: HetznerClient; id: int64; body: PostServersIdActionsAttachToNetworkRequest): Future[\n    PostServersIdActionsAttachToNetworkResponse]		191
+nim	postServersIdActionsChangeAliasIps	hetzner/server_actions.html#postServersIdActionsChangeAliasIps,HetznerClient,int64,PostServersIdActionsChangeAliasIpsRequest	proc postServersIdActionsChangeAliasIps(client: HetznerClient; id: int64; body: PostServersIdActionsChangeAliasIpsRequest): Future[\n    PostServersIdActionsChangeAliasIpsResponse]		227
+nim	postServersIdActionsChangeDnsPtr	hetzner/server_actions.html#postServersIdActionsChangeDnsPtr,HetznerClient,int64,PostServersIdActionsChangeDnsPtrRequest	proc postServersIdActionsChangeDnsPtr(client: HetznerClient; id: int64;\n                                 body: PostServersIdActionsChangeDnsPtrRequest): Future[\n    PostServersIdActionsChangeDnsPtrResponse]		242
+nim	postServersIdActionsChangeProtection	hetzner/server_actions.html#postServersIdActionsChangeProtection,HetznerClient,int64,PostServersIdActionsChangeProtectionRequest	proc postServersIdActionsChangeProtection(client: HetznerClient; id: int64; body: PostServersIdActionsChangeProtectionRequest): Future[\n    PostServersIdActionsChangeProtectionResponse]		257
+nim	postServersIdActionsChangeType	hetzner/server_actions.html#postServersIdActionsChangeType,HetznerClient,int64,PostServersIdActionsChangeTypeRequest	proc postServersIdActionsChangeType(client: HetznerClient; id: int64;\n                               body: PostServersIdActionsChangeTypeRequest): Future[\n    PostServersIdActionsChangeTypeResponse]		269
+nim	postServersIdActionsCreateImage	hetzner/server_actions.html#postServersIdActionsCreateImage,HetznerClient,int64,PostServersIdActionsCreateImageRequest	proc postServersIdActionsCreateImage(client: HetznerClient; id: int64;\n                                body: PostServersIdActionsCreateImageRequest): Future[\n    PostServersIdActionsCreateImageResponse]		302
+nim	postServersIdActionsDetachFromNetwork	hetzner/server_actions.html#postServersIdActionsDetachFromNetwork,HetznerClient,int64,PostServersIdActionsDetachFromNetworkRequest	proc postServersIdActionsDetachFromNetwork(client: HetznerClient; id: int64; body: PostServersIdActionsDetachFromNetworkRequest): Future[\n    PostServersIdActionsDetachFromNetworkResponse]		326
+nim	postServersIdActionsDetachIso	hetzner/server_actions.html#postServersIdActionsDetachIso,HetznerClient,int64	proc postServersIdActionsDetachIso(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsDetachIsoResponse]		337
+nim	postServersIdActionsDisableBackup	hetzner/server_actions.html#postServersIdActionsDisableBackup,HetznerClient,int64	proc postServersIdActionsDisableBackup(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsDisableBackupResponse]		349
+nim	postServersIdActionsDisableRescue	hetzner/server_actions.html#postServersIdActionsDisableRescue,HetznerClient,int64	proc postServersIdActionsDisableRescue(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsDisableRescueResponse]		363
+nim	postServersIdActionsEnableBackup	hetzner/server_actions.html#postServersIdActionsEnableBackup,HetznerClient,int64	proc postServersIdActionsEnableBackup(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsEnableBackupResponse]		381
+nim	postServersIdActionsEnableRescue	hetzner/server_actions.html#postServersIdActionsEnableRescue,HetznerClient,int64,PostServersIdActionsEnableRescueRequest	proc postServersIdActionsEnableRescue(client: HetznerClient; id: int64;\n                                 body: PostServersIdActionsEnableRescueRequest): Future[\n    PostServersIdActionsEnableRescueResponse]		397
+nim	postServersIdActionsPoweroff	hetzner/server_actions.html#postServersIdActionsPoweroff,HetznerClient,int64	proc postServersIdActionsPoweroff(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsPoweroffResponse]		420
+nim	postServersIdActionsPoweron	hetzner/server_actions.html#postServersIdActionsPoweron,HetznerClient,int64	proc postServersIdActionsPoweron(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsPoweronResponse]		434
+nim	postServersIdActionsReboot	hetzner/server_actions.html#postServersIdActionsReboot,HetznerClient,int64	proc postServersIdActionsReboot(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsRebootResponse]		445
+nim	postServersIdActionsRebuild	hetzner/server_actions.html#postServersIdActionsRebuild,HetznerClient,int64,PostServersIdActionsRebuildRequest	proc postServersIdActionsRebuild(client: HetznerClient; id: int64;\n                            body: PostServersIdActionsRebuildRequest): Future[\n    PostServersIdActionsRebuildResponse]		459
+nim	postServersIdActionsRemoveFromPlacementGroup	hetzner/server_actions.html#postServersIdActionsRemoveFromPlacementGroup,HetznerClient,int64	proc postServersIdActionsRemoveFromPlacementGroup(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsRemoveFromPlacementGroupResponse]		479
+nim	postServersIdActionsRequestConsole	hetzner/server_actions.html#postServersIdActionsRequestConsole,HetznerClient,int64	proc postServersIdActionsRequestConsole(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsRequestConsoleResponse]		490
+nim	postServersIdActionsReset	hetzner/server_actions.html#postServersIdActionsReset,HetznerClient,int64	proc postServersIdActionsReset(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsResetResponse]		504
+nim	postServersIdActionsResetPassword	hetzner/server_actions.html#postServersIdActionsResetPassword,HetznerClient,int64	proc postServersIdActionsResetPassword(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsResetPasswordResponse]		518
+nim	postServersIdActionsShutdown	hetzner/server_actions.html#postServersIdActionsShutdown,HetznerClient,int64	proc postServersIdActionsShutdown(client: HetznerClient; id: int64): Future[\n    PostServersIdActionsShutdownResponse]		536
+nim	getServersIdActionsActionId	hetzner/server_actions.html#getServersIdActionsActionId,HetznerClient,int64,int64	proc getServersIdActionsActionId(client: HetznerClient; id: int64; actionId: int64): Future[\n    GetServersIdActionsActionIdResponse]		550

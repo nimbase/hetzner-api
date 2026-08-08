@@ -1,0 +1,5 @@
+nimTitle	locations	hetzner/locations.html	module hetzner/locations		0
+nim	GetLocationsResponse	hetzner/locations.html#GetLocationsResponse	object GetLocationsResponse		12
+nim	GetLocationsIdResponse	hetzner/locations.html#GetLocationsIdResponse	object GetLocationsIdResponse		14
+nim	getLocations	hetzner/locations.html#getLocations,HetznerClient,string	proc getLocations(client: HetznerClient; name: string = default(string)): Future[\n    GetLocationsResponse]		17
+nim	getLocationsId	hetzner/locations.html#getLocationsId,HetznerClient,int64	proc getLocationsId(client: HetznerClient; id: int64): Future[GetLocationsIdResponse]		30

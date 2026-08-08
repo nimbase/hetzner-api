@@ -1,0 +1,27 @@
+nimTitle	load_balancers	hetzner/load_balancers.html	module hetzner/load_balancers		0
+nim	GetLoadBalancersResponse	hetzner/load_balancers.html#GetLoadBalancersResponse	object GetLoadBalancersResponse		12
+nim	PostLoadBalancersResponse	hetzner/load_balancers.html#PostLoadBalancersResponse	object PostLoadBalancersResponse		26
+nim	GetLoadBalancersIdResponse	hetzner/load_balancers.html#GetLoadBalancersIdResponse	object GetLoadBalancersIdResponse		29
+nim	PutLoadBalancersIdResponse	hetzner/load_balancers.html#PutLoadBalancersIdResponse	object PutLoadBalancersIdResponse		34
+nim	GetLoadBalancersIdMetricsResponse	hetzner/load_balancers.html#GetLoadBalancersIdMetricsResponse	object GetLoadBalancersIdMetricsResponse		36
+nim	sortId	hetzner/load_balancers.html#sortId	LoadBalancerSortOption.sortId		38
+nim	sortIdAsc	hetzner/load_balancers.html#sortIdAsc	LoadBalancerSortOption.sortIdAsc		38
+nim	sortIdDesc	hetzner/load_balancers.html#sortIdDesc	LoadBalancerSortOption.sortIdDesc		38
+nim	sortName	hetzner/load_balancers.html#sortName	LoadBalancerSortOption.sortName		38
+nim	sortNameAsc	hetzner/load_balancers.html#sortNameAsc	LoadBalancerSortOption.sortNameAsc		38
+nim	sortNameDesc	hetzner/load_balancers.html#sortNameDesc	LoadBalancerSortOption.sortNameDesc		38
+nim	sortCreated	hetzner/load_balancers.html#sortCreated	LoadBalancerSortOption.sortCreated		38
+nim	sortCreatedAsc	hetzner/load_balancers.html#sortCreatedAsc	LoadBalancerSortOption.sortCreatedAsc		38
+nim	sortCreatedDesc	hetzner/load_balancers.html#sortCreatedDesc	LoadBalancerSortOption.sortCreatedDesc		38
+nim	LoadBalancerSortOption	hetzner/load_balancers.html#LoadBalancerSortOption	enum LoadBalancerSortOption		38
+nim	typeOpenConnections	hetzner/load_balancers.html#typeOpenConnections	LoadBalancerTypeOption.typeOpenConnections		49
+nim	typeConnectionsPerSecond	hetzner/load_balancers.html#typeConnectionsPerSecond	LoadBalancerTypeOption.typeConnectionsPerSecond		49
+nim	typeRequestsPerSecond	hetzner/load_balancers.html#typeRequestsPerSecond	LoadBalancerTypeOption.typeRequestsPerSecond		49
+nim	typeBandwidth	hetzner/load_balancers.html#typeBandwidth	LoadBalancerTypeOption.typeBandwidth		49
+nim	LoadBalancerTypeOption	hetzner/load_balancers.html#LoadBalancerTypeOption	enum LoadBalancerTypeOption		49
+nim	getLoadBalancers	hetzner/load_balancers.html#getLoadBalancers,HetznerClient,set[LoadBalancerSortOption],string,string	proc getLoadBalancers(client: HetznerClient; sort: set[LoadBalancerSortOption] = {};\n                 name: string = default(string);\n                 labelSelector: string = default(string)): Future[\n    GetLoadBalancersResponse]		59
+nim	postLoadBalancers	hetzner/load_balancers.html#postLoadBalancers,HetznerClient,PostLoadBalancersRequest	proc postLoadBalancers(client: HetznerClient; body: PostLoadBalancersRequest): Future[\n    PostLoadBalancersResponse]		74
+nim	getLoadBalancersId	hetzner/load_balancers.html#getLoadBalancersId,HetznerClient,int64	proc getLoadBalancersId(client: HetznerClient; id: int64): Future[\n    GetLoadBalancersIdResponse]		106
+nim	putLoadBalancersId	hetzner/load_balancers.html#putLoadBalancersId,HetznerClient,int64,PutLoadBalancersIdRequest	proc putLoadBalancersId(client: HetznerClient; id: int64;\n                   body: PutLoadBalancersIdRequest): Future[\n    PutLoadBalancersIdResponse]		118
+nim	deleteLoadBalancersId	hetzner/load_balancers.html#deleteLoadBalancersId,HetznerClient,int64	proc deleteLoadBalancersId(client: HetznerClient; id: int64): Future[AsyncResponse]		138
+nim	getLoadBalancersIdMetrics	hetzner/load_balancers.html#getLoadBalancersIdMetrics,HetznerClient,int64,set[LoadBalancerTypeOption],string,string,string	proc getLoadBalancersIdMetrics(client: HetznerClient; id: int64;\n                          type: set[LoadBalancerTypeOption] = {}; start: string;\n                          end: string; step: string = default(string)): Future[\n    GetLoadBalancersIdMetricsResponse]		147

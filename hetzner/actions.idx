@@ -1,0 +1,28 @@
+nimTitle	actions	hetzner/actions.html	module hetzner/actions		0
+nim	GetActionsResponse	hetzner/actions.html#GetActionsResponse	object GetActionsResponse		12
+nim	GetActionsIdResponse	hetzner/actions.html#GetActionsIdResponse	object GetActionsIdResponse		15
+nim	sortId	hetzner/actions.html#sortId	ActionSortOption.sortId		17
+nim	sortIdAsc	hetzner/actions.html#sortIdAsc	ActionSortOption.sortIdAsc		17
+nim	sortIdDesc	hetzner/actions.html#sortIdDesc	ActionSortOption.sortIdDesc		17
+nim	sortCommand	hetzner/actions.html#sortCommand	ActionSortOption.sortCommand		17
+nim	sortCommandAsc	hetzner/actions.html#sortCommandAsc	ActionSortOption.sortCommandAsc		17
+nim	sortCommandDesc	hetzner/actions.html#sortCommandDesc	ActionSortOption.sortCommandDesc		17
+nim	sortStatus	hetzner/actions.html#sortStatus	ActionSortOption.sortStatus		17
+nim	sortStatusAsc	hetzner/actions.html#sortStatusAsc	ActionSortOption.sortStatusAsc		17
+nim	sortStatusDesc	hetzner/actions.html#sortStatusDesc	ActionSortOption.sortStatusDesc		17
+nim	sortProgress	hetzner/actions.html#sortProgress	ActionSortOption.sortProgress		17
+nim	sortProgressAsc	hetzner/actions.html#sortProgressAsc	ActionSortOption.sortProgressAsc		17
+nim	sortProgressDesc	hetzner/actions.html#sortProgressDesc	ActionSortOption.sortProgressDesc		17
+nim	sortStarted	hetzner/actions.html#sortStarted	ActionSortOption.sortStarted		17
+nim	sortStartedAsc	hetzner/actions.html#sortStartedAsc	ActionSortOption.sortStartedAsc		17
+nim	sortStartedDesc	hetzner/actions.html#sortStartedDesc	ActionSortOption.sortStartedDesc		17
+nim	sortFinished	hetzner/actions.html#sortFinished	ActionSortOption.sortFinished		17
+nim	sortFinishedAsc	hetzner/actions.html#sortFinishedAsc	ActionSortOption.sortFinishedAsc		17
+nim	sortFinishedDesc	hetzner/actions.html#sortFinishedDesc	ActionSortOption.sortFinishedDesc		17
+nim	ActionSortOption	hetzner/actions.html#ActionSortOption	enum ActionSortOption		17
+nim	statusRunning	hetzner/actions.html#statusRunning	ActionStatusOption.statusRunning		37
+nim	statusSuccess	hetzner/actions.html#statusSuccess	ActionStatusOption.statusSuccess		37
+nim	statusError	hetzner/actions.html#statusError	ActionStatusOption.statusError		37
+nim	ActionStatusOption	hetzner/actions.html#ActionStatusOption	enum ActionStatusOption		37
+nim	getActions	hetzner/actions.html#getActions,HetznerClient,int64,set[ActionSortOption],set[ActionStatusOption]	proc getActions(client: HetznerClient; id: int64 = default(int64);\n           sort: set[ActionSortOption] = {};\n           status: set[ActionStatusOption] = {}): Future[GetActionsResponse]		45
+nim	getActionsId	hetzner/actions.html#getActionsId,HetznerClient,int64	proc getActionsId(client: HetznerClient; id: int64): Future[GetActionsIdResponse]		61

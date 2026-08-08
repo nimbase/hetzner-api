@@ -1,0 +1,40 @@
+nimTitle	network_actions	hetzner/network_actions.html	module hetzner/network_actions		0
+nim	GetNetworksIdActionsResponse	hetzner/network_actions.html#GetNetworksIdActionsResponse	object GetNetworksIdActionsResponse		12
+nim	PostNetworksIdActionsAddRouteResponse	hetzner/network_actions.html#PostNetworksIdActionsAddRouteResponse	object PostNetworksIdActionsAddRouteResponse		18
+nim	PostNetworksIdActionsAddSubnetResponse	hetzner/network_actions.html#PostNetworksIdActionsAddSubnetResponse	object PostNetworksIdActionsAddSubnetResponse		25
+nim	PostNetworksIdActionsChangeIpRangeResponse	hetzner/network_actions.html#PostNetworksIdActionsChangeIpRangeResponse	object PostNetworksIdActionsChangeIpRangeResponse		29
+nim	PostNetworksIdActionsChangeProtectionResponse	hetzner/network_actions.html#PostNetworksIdActionsChangeProtectionResponse	object PostNetworksIdActionsChangeProtectionResponse		33
+nim	PostNetworksIdActionsDeleteRouteResponse	hetzner/network_actions.html#PostNetworksIdActionsDeleteRouteResponse	object PostNetworksIdActionsDeleteRouteResponse		38
+nim	PostNetworksIdActionsDeleteSubnetResponse	hetzner/network_actions.html#PostNetworksIdActionsDeleteSubnetResponse	object PostNetworksIdActionsDeleteSubnetResponse		42
+nim	GetNetworksIdActionsActionIdResponse	hetzner/network_actions.html#GetNetworksIdActionsActionIdResponse	object GetNetworksIdActionsActionIdResponse		44
+nim	sortId	hetzner/network_actions.html#sortId	NetworkActionSortOption.sortId		46
+nim	sortIdAsc	hetzner/network_actions.html#sortIdAsc	NetworkActionSortOption.sortIdAsc		46
+nim	sortIdDesc	hetzner/network_actions.html#sortIdDesc	NetworkActionSortOption.sortIdDesc		46
+nim	sortCommand	hetzner/network_actions.html#sortCommand	NetworkActionSortOption.sortCommand		46
+nim	sortCommandAsc	hetzner/network_actions.html#sortCommandAsc	NetworkActionSortOption.sortCommandAsc		46
+nim	sortCommandDesc	hetzner/network_actions.html#sortCommandDesc	NetworkActionSortOption.sortCommandDesc		46
+nim	sortStatus	hetzner/network_actions.html#sortStatus	NetworkActionSortOption.sortStatus		46
+nim	sortStatusAsc	hetzner/network_actions.html#sortStatusAsc	NetworkActionSortOption.sortStatusAsc		46
+nim	sortStatusDesc	hetzner/network_actions.html#sortStatusDesc	NetworkActionSortOption.sortStatusDesc		46
+nim	sortProgress	hetzner/network_actions.html#sortProgress	NetworkActionSortOption.sortProgress		46
+nim	sortProgressAsc	hetzner/network_actions.html#sortProgressAsc	NetworkActionSortOption.sortProgressAsc		46
+nim	sortProgressDesc	hetzner/network_actions.html#sortProgressDesc	NetworkActionSortOption.sortProgressDesc		46
+nim	sortStarted	hetzner/network_actions.html#sortStarted	NetworkActionSortOption.sortStarted		46
+nim	sortStartedAsc	hetzner/network_actions.html#sortStartedAsc	NetworkActionSortOption.sortStartedAsc		46
+nim	sortStartedDesc	hetzner/network_actions.html#sortStartedDesc	NetworkActionSortOption.sortStartedDesc		46
+nim	sortFinished	hetzner/network_actions.html#sortFinished	NetworkActionSortOption.sortFinished		46
+nim	sortFinishedAsc	hetzner/network_actions.html#sortFinishedAsc	NetworkActionSortOption.sortFinishedAsc		46
+nim	sortFinishedDesc	hetzner/network_actions.html#sortFinishedDesc	NetworkActionSortOption.sortFinishedDesc		46
+nim	NetworkActionSortOption	hetzner/network_actions.html#NetworkActionSortOption	enum NetworkActionSortOption		46
+nim	statusRunning	hetzner/network_actions.html#statusRunning	NetworkActionStatusOption.statusRunning		66
+nim	statusSuccess	hetzner/network_actions.html#statusSuccess	NetworkActionStatusOption.statusSuccess		66
+nim	statusError	hetzner/network_actions.html#statusError	NetworkActionStatusOption.statusError		66
+nim	NetworkActionStatusOption	hetzner/network_actions.html#NetworkActionStatusOption	enum NetworkActionStatusOption		66
+nim	getNetworksIdActions	hetzner/network_actions.html#getNetworksIdActions,HetznerClient,int64,set[NetworkActionSortOption],set[NetworkActionStatusOption]	proc getNetworksIdActions(client: HetznerClient; id: int64;\n                     sort: set[NetworkActionSortOption] = {};\n                     status: set[NetworkActionStatusOption] = {}): Future[\n    GetNetworksIdActionsResponse]		74
+nim	postNetworksIdActionsAddRoute	hetzner/network_actions.html#postNetworksIdActionsAddRoute,HetznerClient,int64,PostNetworksIdActionsAddRouteRequest	proc postNetworksIdActionsAddRoute(client: HetznerClient; id: int64;\n                              body: PostNetworksIdActionsAddRouteRequest): Future[\n    PostNetworksIdActionsAddRouteResponse]		90
+nim	postNetworksIdActionsAddSubnet	hetzner/network_actions.html#postNetworksIdActionsAddSubnet,HetznerClient,int64,PostNetworksIdActionsAddSubnetRequest	proc postNetworksIdActionsAddSubnet(client: HetznerClient; id: int64;\n                               body: PostNetworksIdActionsAddSubnetRequest): Future[\n    PostNetworksIdActionsAddSubnetResponse]		105
+nim	postNetworksIdActionsChangeIpRange	hetzner/network_actions.html#postNetworksIdActionsChangeIpRange,HetznerClient,int64,PostNetworksIdActionsChangeIpRangeRequest	proc postNetworksIdActionsChangeIpRange(client: HetznerClient; id: int64; body: PostNetworksIdActionsChangeIpRangeRequest): Future[\n    PostNetworksIdActionsChangeIpRangeResponse]		122
+nim	postNetworksIdActionsChangeProtection	hetzner/network_actions.html#postNetworksIdActionsChangeProtection,HetznerClient,int64,PostNetworksIdActionsChangeProtectionRequest	proc postNetworksIdActionsChangeProtection(client: HetznerClient; id: int64; body: PostNetworksIdActionsChangeProtectionRequest): Future[\n    PostNetworksIdActionsChangeProtectionResponse]		149
+nim	postNetworksIdActionsDeleteRoute	hetzner/network_actions.html#postNetworksIdActionsDeleteRoute,HetznerClient,int64,PostNetworksIdActionsDeleteRouteRequest	proc postNetworksIdActionsDeleteRoute(client: HetznerClient; id: int64;\n                                 body: PostNetworksIdActionsDeleteRouteRequest): Future[\n    PostNetworksIdActionsDeleteRouteResponse]		164
+nim	postNetworksIdActionsDeleteSubnet	hetzner/network_actions.html#postNetworksIdActionsDeleteSubnet,HetznerClient,int64,PostNetworksIdActionsDeleteSubnetRequest	proc postNetworksIdActionsDeleteSubnet(client: HetznerClient; id: int64; body: PostNetworksIdActionsDeleteSubnetRequest): Future[\n    PostNetworksIdActionsDeleteSubnetResponse]		179
+nim	getNetworksIdActionsActionId	hetzner/network_actions.html#getNetworksIdActionsActionId,HetznerClient,int64,int64	proc getNetworksIdActionsActionId(client: HetznerClient; id: int64; actionId: int64): Future[\n    GetNetworksIdActionsActionIdResponse]		197

@@ -1,0 +1,37 @@
+nimTitle	servers	hetzner/servers.html	module hetzner/servers		0
+nim	GetServersResponse	hetzner/servers.html#GetServersResponse	object GetServersResponse		12
+nim	PostServersResponse	hetzner/servers.html#PostServersResponse	object PostServersResponse		31
+nim	GetServersIdResponse	hetzner/servers.html#GetServersIdResponse	object GetServersIdResponse		37
+nim	PutServersIdResponse	hetzner/servers.html#PutServersIdResponse	object PutServersIdResponse		42
+nim	DeleteServersIdResponse	hetzner/servers.html#DeleteServersIdResponse	object DeleteServersIdResponse		44
+nim	GetServersIdMetricsResponse	hetzner/servers.html#GetServersIdMetricsResponse	object GetServersIdMetricsResponse		46
+nim	sortId	hetzner/servers.html#sortId	ServerSortOption.sortId		48
+nim	sortIdAsc	hetzner/servers.html#sortIdAsc	ServerSortOption.sortIdAsc		48
+nim	sortIdDesc	hetzner/servers.html#sortIdDesc	ServerSortOption.sortIdDesc		48
+nim	sortName	hetzner/servers.html#sortName	ServerSortOption.sortName		48
+nim	sortNameAsc	hetzner/servers.html#sortNameAsc	ServerSortOption.sortNameAsc		48
+nim	sortNameDesc	hetzner/servers.html#sortNameDesc	ServerSortOption.sortNameDesc		48
+nim	sortCreated	hetzner/servers.html#sortCreated	ServerSortOption.sortCreated		48
+nim	sortCreatedAsc	hetzner/servers.html#sortCreatedAsc	ServerSortOption.sortCreatedAsc		48
+nim	sortCreatedDesc	hetzner/servers.html#sortCreatedDesc	ServerSortOption.sortCreatedDesc		48
+nim	ServerSortOption	hetzner/servers.html#ServerSortOption	enum ServerSortOption		48
+nim	statusInitializing	hetzner/servers.html#statusInitializing	ServerStatusOption.statusInitializing		59
+nim	statusStarting	hetzner/servers.html#statusStarting	ServerStatusOption.statusStarting		59
+nim	statusRunning	hetzner/servers.html#statusRunning	ServerStatusOption.statusRunning		59
+nim	statusStopping	hetzner/servers.html#statusStopping	ServerStatusOption.statusStopping		59
+nim	statusOff	hetzner/servers.html#statusOff	ServerStatusOption.statusOff		59
+nim	statusDeleting	hetzner/servers.html#statusDeleting	ServerStatusOption.statusDeleting		59
+nim	statusRebuilding	hetzner/servers.html#statusRebuilding	ServerStatusOption.statusRebuilding		59
+nim	statusMigrating	hetzner/servers.html#statusMigrating	ServerStatusOption.statusMigrating		59
+nim	statusUnknown	hetzner/servers.html#statusUnknown	ServerStatusOption.statusUnknown		59
+nim	ServerStatusOption	hetzner/servers.html#ServerStatusOption	enum ServerStatusOption		59
+nim	typeCpu	hetzner/servers.html#typeCpu	ServerTypeOption.typeCpu		70
+nim	typeDisk	hetzner/servers.html#typeDisk	ServerTypeOption.typeDisk		70
+nim	typeNetwork	hetzner/servers.html#typeNetwork	ServerTypeOption.typeNetwork		70
+nim	ServerTypeOption	hetzner/servers.html#ServerTypeOption	enum ServerTypeOption		70
+nim	getServers	hetzner/servers.html#getServers,HetznerClient,string,string,set[ServerSortOption],set[ServerStatusOption]	proc getServers(client: HetznerClient; name: string = default(string);\n           labelSelector: string = default(string);\n           sort: set[ServerSortOption] = {};\n           status: set[ServerStatusOption] = {}): Future[GetServersResponse]		79
+nim	postServers	hetzner/servers.html#postServers,HetznerClient,PostServersRequest	proc postServers(client: HetznerClient; body: PostServersRequest): Future[\n    PostServersResponse]		95
+nim	getServersId	hetzner/servers.html#getServersId,HetznerClient,int64	proc getServersId(client: HetznerClient; id: int64): Future[GetServersIdResponse]		107
+nim	putServersId	hetzner/servers.html#putServersId,HetznerClient,int64,PutServersIdRequest	proc putServersId(client: HetznerClient; id: int64; body: PutServersIdRequest): Future[\n    PutServersIdResponse]		118
+nim	deleteServersId	hetzner/servers.html#deleteServersId,HetznerClient,int64	proc deleteServersId(client: HetznerClient; id: int64): Future[\n    DeleteServersIdResponse]		135
+nim	getServersIdMetrics	hetzner/servers.html#getServersIdMetrics,HetznerClient,int64,set[ServerTypeOption],string,string,string	proc getServersIdMetrics(client: HetznerClient; id: int64;\n                    type: set[ServerTypeOption] = {}; start: string;\n                    end: string; step: string = default(string)): Future[\n    GetServersIdMetricsResponse]		149

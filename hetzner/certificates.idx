@@ -1,0 +1,23 @@
+nimTitle	certificates	hetzner/certificates.html	module hetzner/certificates		0
+nim	GetCertificatesResponse	hetzner/certificates.html#GetCertificatesResponse	object GetCertificatesResponse		12
+nim	PostCertificatesResponse	hetzner/certificates.html#PostCertificatesResponse	object PostCertificatesResponse		22
+nim	GetCertificatesIdResponse	hetzner/certificates.html#GetCertificatesIdResponse	object GetCertificatesIdResponse		25
+nim	PutCertificatesIdResponse	hetzner/certificates.html#PutCertificatesIdResponse	object PutCertificatesIdResponse		30
+nim	sortId	hetzner/certificates.html#sortId	CertificateSortOption.sortId		32
+nim	sortIdAsc	hetzner/certificates.html#sortIdAsc	CertificateSortOption.sortIdAsc		32
+nim	sortIdDesc	hetzner/certificates.html#sortIdDesc	CertificateSortOption.sortIdDesc		32
+nim	sortName	hetzner/certificates.html#sortName	CertificateSortOption.sortName		32
+nim	sortNameAsc	hetzner/certificates.html#sortNameAsc	CertificateSortOption.sortNameAsc		32
+nim	sortNameDesc	hetzner/certificates.html#sortNameDesc	CertificateSortOption.sortNameDesc		32
+nim	sortCreated	hetzner/certificates.html#sortCreated	CertificateSortOption.sortCreated		32
+nim	sortCreatedAsc	hetzner/certificates.html#sortCreatedAsc	CertificateSortOption.sortCreatedAsc		32
+nim	sortCreatedDesc	hetzner/certificates.html#sortCreatedDesc	CertificateSortOption.sortCreatedDesc		32
+nim	CertificateSortOption	hetzner/certificates.html#CertificateSortOption	enum CertificateSortOption		32
+nim	typeUploaded	hetzner/certificates.html#typeUploaded	CertificateTypeOption.typeUploaded		43
+nim	typeManaged	hetzner/certificates.html#typeManaged	CertificateTypeOption.typeManaged		43
+nim	CertificateTypeOption	hetzner/certificates.html#CertificateTypeOption	enum CertificateTypeOption		43
+nim	getCertificates	hetzner/certificates.html#getCertificates,HetznerClient,set[CertificateSortOption],string,string,set[CertificateTypeOption]	proc getCertificates(client: HetznerClient; sort: set[CertificateSortOption] = {};\n                name: string = default(string);\n                labelSelector: string = default(string);\n                type: set[CertificateTypeOption] = {}): Future[\n    GetCertificatesResponse]		52
+nim	postCertificates	hetzner/certificates.html#postCertificates,HetznerClient,PostCertificatesRequest	proc postCertificates(client: HetznerClient; body: PostCertificatesRequest): Future[\n    PostCertificatesResponse]		68
+nim	getCertificatesId	hetzner/certificates.html#getCertificatesId,HetznerClient,int64	proc getCertificatesId(client: HetznerClient; id: int64): Future[\n    GetCertificatesIdResponse]		92
+nim	putCertificatesId	hetzner/certificates.html#putCertificatesId,HetznerClient,int64,PutCertificatesIdRequest	proc putCertificatesId(client: HetznerClient; id: int64;\n                  body: PutCertificatesIdRequest): Future[\n    PutCertificatesIdResponse]		104
+nim	deleteCertificatesId	hetzner/certificates.html#deleteCertificatesId,HetznerClient,int64	proc deleteCertificatesId(client: HetznerClient; id: int64): Future[AsyncResponse]		123

@@ -1,0 +1,26 @@
+nimTitle	images	hetzner/images.html	module hetzner/images		0
+nim	GetImagesResponse	hetzner/images.html#GetImagesResponse	object GetImagesResponse		12
+nim	GetImagesIdResponse	hetzner/images.html#GetImagesIdResponse	object GetImagesIdResponse		15
+nim	PutImagesIdResponse	hetzner/images.html#PutImagesIdResponse	object PutImagesIdResponse		21
+nim	sortId	hetzner/images.html#sortId	ImageSortOption.sortId		23
+nim	sortIdAsc	hetzner/images.html#sortIdAsc	ImageSortOption.sortIdAsc		23
+nim	sortIdDesc	hetzner/images.html#sortIdDesc	ImageSortOption.sortIdDesc		23
+nim	sortName	hetzner/images.html#sortName	ImageSortOption.sortName		23
+nim	sortNameAsc	hetzner/images.html#sortNameAsc	ImageSortOption.sortNameAsc		23
+nim	sortNameDesc	hetzner/images.html#sortNameDesc	ImageSortOption.sortNameDesc		23
+nim	sortCreated	hetzner/images.html#sortCreated	ImageSortOption.sortCreated		23
+nim	sortCreatedAsc	hetzner/images.html#sortCreatedAsc	ImageSortOption.sortCreatedAsc		23
+nim	sortCreatedDesc	hetzner/images.html#sortCreatedDesc	ImageSortOption.sortCreatedDesc		23
+nim	ImageSortOption	hetzner/images.html#ImageSortOption	enum ImageSortOption		23
+nim	typeSystem	hetzner/images.html#typeSystem	ImageTypeOption.typeSystem		34
+nim	typeSnapshot	hetzner/images.html#typeSnapshot	ImageTypeOption.typeSnapshot		34
+nim	typeBackup	hetzner/images.html#typeBackup	ImageTypeOption.typeBackup		34
+nim	typeApp	hetzner/images.html#typeApp	ImageTypeOption.typeApp		34
+nim	ImageTypeOption	hetzner/images.html#ImageTypeOption	enum ImageTypeOption		34
+nim	statusAvailable	hetzner/images.html#statusAvailable	ImageStatusOption.statusAvailable		40
+nim	statusCreating	hetzner/images.html#statusCreating	ImageStatusOption.statusCreating		40
+nim	ImageStatusOption	hetzner/images.html#ImageStatusOption	enum ImageStatusOption		40
+nim	getImages	hetzner/images.html#getImages,HetznerClient,set[ImageSortOption],set[ImageTypeOption],set[ImageStatusOption],string,bool,string,string	proc getImages(client: HetznerClient; sort: set[ImageSortOption] = {};\n          type: set[ImageTypeOption] = {}; status: set[ImageStatusOption] = {};\n          boundTo: string = default(string);\n          includeDeprecated: bool = default(bool);\n          name: string = default(string);\n          labelSelector: string = default(string)): Future[GetImagesResponse]		51
+nim	getImagesId	hetzner/images.html#getImagesId,HetznerClient,int64	proc getImagesId(client: HetznerClient; id: int64): Future[GetImagesIdResponse]		71
+nim	putImagesId	hetzner/images.html#putImagesId,HetznerClient,int64,PutImagesIdRequest	proc putImagesId(client: HetznerClient; id: int64; body: PutImagesIdRequest): Future[\n    PutImagesIdResponse]		82
+nim	deleteImagesId	hetzner/images.html#deleteImagesId,HetznerClient,int64	proc deleteImagesId(client: HetznerClient; id: int64): Future[AsyncResponse]		100

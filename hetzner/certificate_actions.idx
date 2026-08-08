@@ -1,0 +1,30 @@
+nimTitle	certificate_actions	hetzner/certificate_actions.html	module hetzner/certificate_actions		0
+nim	GetCertificatesIdActionsResponse	hetzner/certificate_actions.html#GetCertificatesIdActionsResponse	object GetCertificatesIdActionsResponse		12
+nim	PostCertificatesIdActionsRetryResponse	hetzner/certificate_actions.html#PostCertificatesIdActionsRetryResponse	object PostCertificatesIdActionsRetryResponse		15
+nim	GetCertificatesIdActionsActionIdResponse	hetzner/certificate_actions.html#GetCertificatesIdActionsActionIdResponse	object GetCertificatesIdActionsActionIdResponse		17
+nim	sortId	hetzner/certificate_actions.html#sortId	CertificateActionSortOption.sortId		19
+nim	sortIdAsc	hetzner/certificate_actions.html#sortIdAsc	CertificateActionSortOption.sortIdAsc		19
+nim	sortIdDesc	hetzner/certificate_actions.html#sortIdDesc	CertificateActionSortOption.sortIdDesc		19
+nim	sortCommand	hetzner/certificate_actions.html#sortCommand	CertificateActionSortOption.sortCommand		19
+nim	sortCommandAsc	hetzner/certificate_actions.html#sortCommandAsc	CertificateActionSortOption.sortCommandAsc		19
+nim	sortCommandDesc	hetzner/certificate_actions.html#sortCommandDesc	CertificateActionSortOption.sortCommandDesc		19
+nim	sortStatus	hetzner/certificate_actions.html#sortStatus	CertificateActionSortOption.sortStatus		19
+nim	sortStatusAsc	hetzner/certificate_actions.html#sortStatusAsc	CertificateActionSortOption.sortStatusAsc		19
+nim	sortStatusDesc	hetzner/certificate_actions.html#sortStatusDesc	CertificateActionSortOption.sortStatusDesc		19
+nim	sortProgress	hetzner/certificate_actions.html#sortProgress	CertificateActionSortOption.sortProgress		19
+nim	sortProgressAsc	hetzner/certificate_actions.html#sortProgressAsc	CertificateActionSortOption.sortProgressAsc		19
+nim	sortProgressDesc	hetzner/certificate_actions.html#sortProgressDesc	CertificateActionSortOption.sortProgressDesc		19
+nim	sortStarted	hetzner/certificate_actions.html#sortStarted	CertificateActionSortOption.sortStarted		19
+nim	sortStartedAsc	hetzner/certificate_actions.html#sortStartedAsc	CertificateActionSortOption.sortStartedAsc		19
+nim	sortStartedDesc	hetzner/certificate_actions.html#sortStartedDesc	CertificateActionSortOption.sortStartedDesc		19
+nim	sortFinished	hetzner/certificate_actions.html#sortFinished	CertificateActionSortOption.sortFinished		19
+nim	sortFinishedAsc	hetzner/certificate_actions.html#sortFinishedAsc	CertificateActionSortOption.sortFinishedAsc		19
+nim	sortFinishedDesc	hetzner/certificate_actions.html#sortFinishedDesc	CertificateActionSortOption.sortFinishedDesc		19
+nim	CertificateActionSortOption	hetzner/certificate_actions.html#CertificateActionSortOption	enum CertificateActionSortOption		19
+nim	statusRunning	hetzner/certificate_actions.html#statusRunning	CertificateActionStatusOption.statusRunning		39
+nim	statusSuccess	hetzner/certificate_actions.html#statusSuccess	CertificateActionStatusOption.statusSuccess		39
+nim	statusError	hetzner/certificate_actions.html#statusError	CertificateActionStatusOption.statusError		39
+nim	CertificateActionStatusOption	hetzner/certificate_actions.html#CertificateActionStatusOption	enum CertificateActionStatusOption		39
+nim	getCertificatesIdActions	hetzner/certificate_actions.html#getCertificatesIdActions,HetznerClient,int64,set[CertificateActionSortOption],set[CertificateActionStatusOption]	proc getCertificatesIdActions(client: HetznerClient; id: int64;\n                         sort: set[CertificateActionSortOption] = {};\n                         status: set[CertificateActionStatusOption] = {}): Future[\n    GetCertificatesIdActionsResponse]		47
+nim	postCertificatesIdActionsRetry	hetzner/certificate_actions.html#postCertificatesIdActionsRetry,HetznerClient,int64	proc postCertificatesIdActionsRetry(client: HetznerClient; id: int64): Future[\n    PostCertificatesIdActionsRetryResponse]		65
+nim	getCertificatesIdActionsActionId	hetzner/certificate_actions.html#getCertificatesIdActionsActionId,HetznerClient,int64,int64	proc getCertificatesIdActionsActionId(client: HetznerClient; id: int64;\n                                 actionId: int64): Future[\n    GetCertificatesIdActionsActionIdResponse]		103

@@ -1,0 +1,5 @@
+nimTitle	load_balancer_types	hetzner/load_balancer_types.html	module hetzner/load_balancer_types		0
+nim	GetLoadBalancerTypesResponse	hetzner/load_balancer_types.html#GetLoadBalancerTypesResponse	object GetLoadBalancerTypesResponse		12
+nim	GetLoadBalancerTypesIdResponse	hetzner/load_balancer_types.html#GetLoadBalancerTypesIdResponse	object GetLoadBalancerTypesIdResponse		14
+nim	getLoadBalancerTypes	hetzner/load_balancer_types.html#getLoadBalancerTypes,HetznerClient,string	proc getLoadBalancerTypes(client: HetznerClient; name: string = default(string)): Future[\n    GetLoadBalancerTypesResponse]		17
+nim	getLoadBalancerTypesId	hetzner/load_balancer_types.html#getLoadBalancerTypesId,HetznerClient,int64	proc getLoadBalancerTypesId(client: HetznerClient; id: int64): Future[\n    GetLoadBalancerTypesIdResponse]		30

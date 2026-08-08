@@ -1,0 +1,5 @@
+nimTitle	datacenters	hetzner/datacenters.html	module hetzner/datacenters		0
+nim	GetDatacentersResponse	hetzner/datacenters.html#GetDatacentersResponse	object GetDatacentersResponse		12
+nim	GetDatacentersIdResponse	hetzner/datacenters.html#GetDatacentersIdResponse	object GetDatacentersIdResponse		16
+nim	getDatacenters	hetzner/datacenters.html#getDatacenters,HetznerClient,string	proc getDatacenters(client: HetznerClient; name: string = default(string)): Future[\n    GetDatacentersResponse]		19
+nim	getDatacentersId	hetzner/datacenters.html#getDatacentersId,HetznerClient,int64	proc getDatacentersId(client: HetznerClient; id: int64): Future[\n    GetDatacentersIdResponse]		32

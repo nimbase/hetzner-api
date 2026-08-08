@@ -1,0 +1,23 @@
+nimTitle	volumes	hetzner/volumes.html	module hetzner/volumes		0
+nim	GetVolumesResponse	hetzner/volumes.html#GetVolumesResponse	object GetVolumesResponse		12
+nim	PostVolumesResponse	hetzner/volumes.html#PostVolumesResponse	object PostVolumesResponse		23
+nim	GetVolumesIdResponse	hetzner/volumes.html#GetVolumesIdResponse	object GetVolumesIdResponse		27
+nim	PutVolumesIdResponse	hetzner/volumes.html#PutVolumesIdResponse	object PutVolumesIdResponse		32
+nim	statusAvailable	hetzner/volumes.html#statusAvailable	VolumeStatusOption.statusAvailable		34
+nim	statusCreating	hetzner/volumes.html#statusCreating	VolumeStatusOption.statusCreating		34
+nim	VolumeStatusOption	hetzner/volumes.html#VolumeStatusOption	enum VolumeStatusOption		34
+nim	sortId	hetzner/volumes.html#sortId	VolumeSortOption.sortId		38
+nim	sortIdAsc	hetzner/volumes.html#sortIdAsc	VolumeSortOption.sortIdAsc		38
+nim	sortIdDesc	hetzner/volumes.html#sortIdDesc	VolumeSortOption.sortIdDesc		38
+nim	sortName	hetzner/volumes.html#sortName	VolumeSortOption.sortName		38
+nim	sortNameAsc	hetzner/volumes.html#sortNameAsc	VolumeSortOption.sortNameAsc		38
+nim	sortNameDesc	hetzner/volumes.html#sortNameDesc	VolumeSortOption.sortNameDesc		38
+nim	sortCreated	hetzner/volumes.html#sortCreated	VolumeSortOption.sortCreated		38
+nim	sortCreatedAsc	hetzner/volumes.html#sortCreatedAsc	VolumeSortOption.sortCreatedAsc		38
+nim	sortCreatedDesc	hetzner/volumes.html#sortCreatedDesc	VolumeSortOption.sortCreatedDesc		38
+nim	VolumeSortOption	hetzner/volumes.html#VolumeSortOption	enum VolumeSortOption		38
+nim	getVolumes	hetzner/volumes.html#getVolumes,HetznerClient,set[VolumeStatusOption],set[VolumeSortOption],string,string	proc getVolumes(client: HetznerClient; status: set[VolumeStatusOption] = {};\n           sort: set[VolumeSortOption] = {}; name: string = default(string);\n           labelSelector: string = default(string)): Future[GetVolumesResponse]		53
+nim	postVolumes	hetzner/volumes.html#postVolumes,HetznerClient,PostVolumesRequest	proc postVolumes(client: HetznerClient; body: PostVolumesRequest): Future[\n    PostVolumesResponse]		69
+nim	getVolumesId	hetzner/volumes.html#getVolumesId,HetznerClient,int64	proc getVolumesId(client: HetznerClient; id: int64): Future[GetVolumesIdResponse]		104
+nim	putVolumesId	hetzner/volumes.html#putVolumesId,HetznerClient,string,PutVolumesIdRequest	proc putVolumesId(client: HetznerClient; id: string; body: PutVolumesIdRequest): Future[\n    PutVolumesIdResponse]		115
+nim	deleteVolumesId	hetzner/volumes.html#deleteVolumesId,HetznerClient,string	proc deleteVolumesId(client: HetznerClient; id: string): Future[AsyncResponse]		131

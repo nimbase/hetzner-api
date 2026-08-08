@@ -1,0 +1,34 @@
+nimTitle	firewall_actions	hetzner/firewall_actions.html	module hetzner/firewall_actions		0
+nim	GetFirewallsIdActionsResponse	hetzner/firewall_actions.html#GetFirewallsIdActionsResponse	object GetFirewallsIdActionsResponse		12
+nim	PostFirewallsIdActionsApplyToResourcesResponse	hetzner/firewall_actions.html#PostFirewallsIdActionsApplyToResourcesResponse	object PostFirewallsIdActionsApplyToResourcesResponse		17
+nim	PostFirewallsIdActionsRemoveFromResourcesResponse	hetzner/firewall_actions.html#PostFirewallsIdActionsRemoveFromResourcesResponse	object PostFirewallsIdActionsRemoveFromResourcesResponse		22
+nim	PostFirewallsIdActionsSetRulesResponse	hetzner/firewall_actions.html#PostFirewallsIdActionsSetRulesResponse	object PostFirewallsIdActionsSetRulesResponse		27
+nim	GetFirewallsIdActionsActionIdResponse	hetzner/firewall_actions.html#GetFirewallsIdActionsActionIdResponse	object GetFirewallsIdActionsActionIdResponse		30
+nim	sortId	hetzner/firewall_actions.html#sortId	FirewallActionSortOption.sortId		32
+nim	sortIdAsc	hetzner/firewall_actions.html#sortIdAsc	FirewallActionSortOption.sortIdAsc		32
+nim	sortIdDesc	hetzner/firewall_actions.html#sortIdDesc	FirewallActionSortOption.sortIdDesc		32
+nim	sortCommand	hetzner/firewall_actions.html#sortCommand	FirewallActionSortOption.sortCommand		32
+nim	sortCommandAsc	hetzner/firewall_actions.html#sortCommandAsc	FirewallActionSortOption.sortCommandAsc		32
+nim	sortCommandDesc	hetzner/firewall_actions.html#sortCommandDesc	FirewallActionSortOption.sortCommandDesc		32
+nim	sortStatus	hetzner/firewall_actions.html#sortStatus	FirewallActionSortOption.sortStatus		32
+nim	sortStatusAsc	hetzner/firewall_actions.html#sortStatusAsc	FirewallActionSortOption.sortStatusAsc		32
+nim	sortStatusDesc	hetzner/firewall_actions.html#sortStatusDesc	FirewallActionSortOption.sortStatusDesc		32
+nim	sortProgress	hetzner/firewall_actions.html#sortProgress	FirewallActionSortOption.sortProgress		32
+nim	sortProgressAsc	hetzner/firewall_actions.html#sortProgressAsc	FirewallActionSortOption.sortProgressAsc		32
+nim	sortProgressDesc	hetzner/firewall_actions.html#sortProgressDesc	FirewallActionSortOption.sortProgressDesc		32
+nim	sortStarted	hetzner/firewall_actions.html#sortStarted	FirewallActionSortOption.sortStarted		32
+nim	sortStartedAsc	hetzner/firewall_actions.html#sortStartedAsc	FirewallActionSortOption.sortStartedAsc		32
+nim	sortStartedDesc	hetzner/firewall_actions.html#sortStartedDesc	FirewallActionSortOption.sortStartedDesc		32
+nim	sortFinished	hetzner/firewall_actions.html#sortFinished	FirewallActionSortOption.sortFinished		32
+nim	sortFinishedAsc	hetzner/firewall_actions.html#sortFinishedAsc	FirewallActionSortOption.sortFinishedAsc		32
+nim	sortFinishedDesc	hetzner/firewall_actions.html#sortFinishedDesc	FirewallActionSortOption.sortFinishedDesc		32
+nim	FirewallActionSortOption	hetzner/firewall_actions.html#FirewallActionSortOption	enum FirewallActionSortOption		32
+nim	statusRunning	hetzner/firewall_actions.html#statusRunning	FirewallActionStatusOption.statusRunning		52
+nim	statusSuccess	hetzner/firewall_actions.html#statusSuccess	FirewallActionStatusOption.statusSuccess		52
+nim	statusError	hetzner/firewall_actions.html#statusError	FirewallActionStatusOption.statusError		52
+nim	FirewallActionStatusOption	hetzner/firewall_actions.html#FirewallActionStatusOption	enum FirewallActionStatusOption		52
+nim	getFirewallsIdActions	hetzner/firewall_actions.html#getFirewallsIdActions,HetznerClient,int64,set[FirewallActionSortOption],set[FirewallActionStatusOption]	proc getFirewallsIdActions(client: HetznerClient; id: int64;\n                      sort: set[FirewallActionSortOption] = {};\n                      status: set[FirewallActionStatusOption] = {}): Future[\n    GetFirewallsIdActionsResponse]		60
+nim	postFirewallsIdActionsApplyToResources	hetzner/firewall_actions.html#postFirewallsIdActionsApplyToResources,HetznerClient,int64,PostFirewallsIdActionsApplyToResourcesRequest	proc postFirewallsIdActionsApplyToResources(client: HetznerClient; id: int64; body: PostFirewallsIdActionsApplyToResourcesRequest): Future[\n    PostFirewallsIdActionsApplyToResourcesResponse]		76
+nim	postFirewallsIdActionsRemoveFromResources	hetzner/firewall_actions.html#postFirewallsIdActionsRemoveFromResources,HetznerClient,int64,PostFirewallsIdActionsRemoveFromResourcesRequest	proc postFirewallsIdActionsRemoveFromResources(client: HetznerClient; id: int64;\n    body: PostFirewallsIdActionsRemoveFromResourcesRequest): Future[\n    PostFirewallsIdActionsRemoveFromResourcesResponse]		103
+nim	postFirewallsIdActionsSetRules	hetzner/firewall_actions.html#postFirewallsIdActionsSetRules,HetznerClient,int64,PostFirewallsIdActionsSetRulesRequest	proc postFirewallsIdActionsSetRules(client: HetznerClient; id: int64;\n                               body: PostFirewallsIdActionsSetRulesRequest): Future[\n    PostFirewallsIdActionsSetRulesResponse]		130
+nim	getFirewallsIdActionsActionId	hetzner/firewall_actions.html#getFirewallsIdActionsActionId,HetznerClient,int64,int64	proc getFirewallsIdActionsActionId(client: HetznerClient; id: int64; actionId: int64): Future[\n    GetFirewallsIdActionsActionIdResponse]		155

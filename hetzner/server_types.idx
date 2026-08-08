@@ -1,0 +1,5 @@
+nimTitle	server_types	hetzner/server_types.html	module hetzner/server_types		0
+nim	GetServerTypesResponse	hetzner/server_types.html#GetServerTypesResponse	object GetServerTypesResponse		12
+nim	GetServerTypesIdResponse	hetzner/server_types.html#GetServerTypesIdResponse	object GetServerTypesIdResponse		14
+nim	getServerTypes	hetzner/server_types.html#getServerTypes,HetznerClient,string	proc getServerTypes(client: HetznerClient; name: string = default(string)): Future[\n    GetServerTypesResponse]		17
+nim	getServerTypesId	hetzner/server_types.html#getServerTypesId,HetznerClient,int64	proc getServerTypesId(client: HetznerClient; id: int64): Future[\n    GetServerTypesIdResponse]		30
