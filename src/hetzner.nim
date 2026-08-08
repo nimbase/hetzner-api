@@ -1,7 +1,21 @@
-# This is just an example to get you started. A typical library package
-# exports the main API in this file. Note that you cannot rename this file
-# but you can remove it if you wish.
+# hetzner API client for Nim
+#
+# Auto-generated from OpenAPI 3.x specification
+# Nimbase CLI https://github.com/nimbase/nimbase
+#
+# Generated at: 2026-08-08T23:31:24+03:00
+# License: MIT
+import ./hetzner/[actions, certificates, certificate_actions, datacenters, firewalls,
+                  firewall_actions, floating_ips, floating_ip_actions, images, image_actions,
+                  isos, load_balancer_types, load_balancers, load_balancer_actions, locations,
+                  networks, network_actions, placement_groups, pricing, primary_ips,
+                  primary_ip_actions, server_types, servers, server_actions, ssh_keys,
+                  volumes, volume_actions]
+import ./hetzner/private/[metaclient]
 
-proc add*(x, y: int): int =
-  ## Adds two numbers together.
-  return x + y
+export actions, certificates, certificate_actions, datacenters, firewalls,
+       firewall_actions, floating_ips, floating_ip_actions, images, image_actions,
+       isos, load_balancer_types, load_balancers, load_balancer_actions, locations,
+       networks, network_actions, placement_groups, pricing, primary_ips,
+       primary_ip_actions, server_types, servers, server_actions, ssh_keys,
+       volumes, volume_actions, metaclient

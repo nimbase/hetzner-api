@@ -1,39 +1,59 @@
 name: docs
 on:
+  pull_request:
+    paths-ignore:
+      - LICENSE
+      - README.*
+      - examples
   push:
+    paths-ignore:
+      - LICENSE
+      - README.*
+      - examples
     tags:
       - '*.*.*'
-    # branches:
-    #   - main
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 env:
   nim-version: 'stable'
-  nim-src: src/hetzner.nim
   deploy-dir: .gh-pages
+
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      
+      - name: Compute package name
+        id: pkg
+        run: |
+          name="${GITHUB_REPOSITORY##*/}"          # e.g. paypal-nim / paypal-api
+          name="${name%-nim}"
+          name="${name%-api}"
+          echo "pkg=${name}" >> "$GITHUB_OUTPUT"    # e.g. paypal
+
       - uses: jiro4989/setup-nim-action@v1
         with:
           nim-version: ${{ env.nim-version }}
       - run: nimble install -Y
-      - run: nim doc --index:on --project --path:. --out:${{ env.deploy-dir }} ${{ env.nim-src }}
-      
+      - run: nim doc --index:on --project --path:. --out:${{ env.deploy-dir }} src/${{ steps.pkg.outputs.pkg }}.nim
+
       - name: "Rename to index.html"
-        run: mv ${{ env.deploy-dir }}/hetzner.html ${{ env.deploy-dir }}/index.html 
-      
+        run: mv ${{ env.deploy-dir }}/${{ steps.pkg.outputs.pkg }}.html ${{ env.deploy-dir }}/index.html
+
       - name: "Find and replace (index.html)"
-        run: sed -i 's/hetzner.html/index.html/g' ${{ env.deploy-dir }}/index.html
-      
-      # - name: "Find and replace (idx)"
-      #   run: sed -i 's/${{ github.event.repository.name }}.html/index.html/g' ${{ env.deploy-dir }}/${{ github.event.repository.name }}.idx
-        
+        run: sed -i 's/${{ steps.pkg.outputs.pkg }}.html/index.html/g' ${{ env.deploy-dir }}/index.html
+
       - name: "Find and replace (theindex.html)"
-        run: sed -i 's/hetzner.html/index.html/g' ${{ env.deploy-dir }}/theindex.html
-        
+        run: sed -i 's/${{ steps.pkg.outputs.pkg }}.html/index.html/g' ${{ env.deploy-dir }}/theindex.html
+
       - name: Deploy documents
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.deploy-dir }}
