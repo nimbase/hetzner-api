@@ -10,3 +10,8 @@ srcDir        = "src"
 
 requires "nim >= 2.0.0"
 requires "openparser"
+
+task test, "Run all tests":
+  import std/os
+  for testFile in walkFiles("tests/test_*.nim"):
+    exec "nim r " & testFile
