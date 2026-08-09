@@ -3,7 +3,7 @@
 # Auto-generated from OpenAPI 3.x specification
 # Nimbase CLI https://github.com/nimbase/nimbase
 #
-# Generated at: 2026-08-08T23:31:24+03:00
+# Generated at: 2026-08-09T00:17:48+00:00
 # License: MIT
 import std/net
 from std/asyncdispatch import waitFor, asyncCheck
