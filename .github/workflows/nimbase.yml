@@ -7,7 +7,9 @@
 # If the tests fail, the bot files a GitHub issue and releases nothing.
 #
 # Setup:
-#   1. Add a bot PAT (`repo` scope) as the `BOT_TOKEN` secret here.
+#   1. Works out of the box with GITHUB_TOKEN (no secrets needed). Optionally
+#      add a bot PAT as `BOT_TOKEN` so the bot's pushes re-trigger the dependent
+#      test/docs workflows.
 #   2. Ensure an initial tag exists matching the root hetzner.nimble version.
 
 name: nimbase
@@ -40,7 +42,8 @@ jobs:
 
       - uses: nimbase/nimbase-bot@v1
         with:
-          token: ${{ secrets.BOT_TOKEN }}
+          # token is optional; defaults to GITHUB_TOKEN. Pass secrets.BOT_TOKEN
+          # to re-trigger dependent test/docs workflows.
           test: 'true'
           # Generate the client into a temp dir and copy the generated sources
           # over the repo root. hetzner.nimble is left untouched so the patch
