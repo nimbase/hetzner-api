@@ -3,8 +3,9 @@
 # The Hetzner Cloud client is a single package living at the repo root and is
 # generated from the upstream apis.guru spec (no local specs/ dir). This workflow
 # regenerates it from the upstream spec on a nightly schedule (or manually),
-# then runs the test suite, auto-bumps the version, commits, tags and releases.
-# If the tests fail, the bot files a GitHub issue and releases nothing.
+# bumps the version (from the latest git tag), commits, tags and releases.
+# Testing happens in the repo's own test.yml workflow, which the bot's commits
+# re-trigger.
 #
 # Setup:
 #   1. Works out of the box with GITHUB_TOKEN (no secrets needed). Optionally
@@ -34,7 +35,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write    # needed for GITHUB_TOKEN to file test-failure issues
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,9 +44,8 @@ jobs:
         with:
           # token is optional; defaults to GITHUB_TOKEN. Pass secrets.BOT_TOKEN
           # to re-trigger dependent test/docs workflows.
-          test: 'true'
           # Generate the client into a temp dir and copy the generated sources
-          # over the repo root. hetzner.nimble is left untouched so the patch
+          # over the repo root. hetzner.nimble is left untouched so the version
           # bump keeps progressing across releases.
           gen-command: |
             tmp="$(mktemp -d)"
