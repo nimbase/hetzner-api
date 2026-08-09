@@ -3,7 +3,7 @@
 # Auto-generated from OpenAPI 3.x specification
 # Nimbase CLI https://github.com/nimbase/nimbase
 #
-# Generated at: 2026-08-09T00:17:48+00:00
+# Generated at: 2026-08-09T04:08:19+00:00
 # License: MIT
 import ./hetzner/[actions, certificates, certificate_actions, datacenters, firewalls,
                   firewall_actions, floating_ips, floating_ip_actions, images, image_actions,

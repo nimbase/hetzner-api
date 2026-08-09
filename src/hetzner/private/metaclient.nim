@@ -3,7 +3,7 @@
 # Auto-generated from OpenAPI 3.x specification
 # using the awesome [Nimbase CLI](https://github.com/nimbase/nimbase)
 #
-# Generated at: 2026-08-09T00:17:48+00:00
+# Generated at: 2026-08-09T04:08:19+00:00
 # License: MIT
 
 import std/[asyncdispatch, httpclient, tables,
