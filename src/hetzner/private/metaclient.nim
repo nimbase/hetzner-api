@@ -3,7 +3,7 @@
 # Auto-generated from OpenAPI 3.x specification
 # using the awesome [Nimbase CLI](https://github.com/nimbase/nimbase)
 #
-# Generated at: 2026-08-09T04:08:19+00:00
+# Generated at: 2026-08-10T04:22:05+00:00
 # License: MIT
 
 import std/[asyncdispatch, httpclient, tables,
@@ -13,6 +13,7 @@ import pkg/openparser/json
 
 
 export asyncdispatch, httpclient, json, tables, sequtils, times
+
 
 type
   HetznerClient* = ref object of RootObj
