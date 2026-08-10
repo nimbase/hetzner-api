@@ -1,16 +1,17 @@
 # NimbaseBot workflow
 #
 # The Hetzner Cloud client is a single package living at the repo root and is
-# generated from the upstream apis.guru spec (no local specs/ dir). This workflow
-# regenerates it from the upstream spec on a nightly schedule (or manually),
-# bumps the version (from the latest git tag), commits, tags and releases.
-# Testing happens in the repo's own test.yml workflow, which the bot's commits
-# re-trigger.
+# generated from the upstream apis.guru spec (no local specs/ dir). On a nightly
+# schedule the bot first checks whether the upstream spec changed (via
+# `nimbase oapi.diff`, comparing against the committed specs/hetzner.cloud.json)
+# and only regenerates, bumps the version, commits, tags and releases when it
+# did. Testing happens in the repo's own test.yml workflow, which the bot's
+# commits re-trigger.
 #
 # Setup:
-#   1. Works out of the box with GITHUB_TOKEN (no secrets needed). Optionally
-#      add a bot PAT as `BOT_TOKEN` so the bot's pushes re-trigger the dependent
-#      test/docs workflows.
+#   1. Add a bot PAT (`repo` scope) as the `BOT_TOKEN` secret here. The bot
+#      commits with it so GitHub re-triggers the repo's test.yml/docs.yml
+#      workflows (pushes made with GITHUB_TOKEN do not).
 #   2. Ensure an initial tag exists matching the root hetzner.nimble version.
 
 name: nimbase
@@ -20,6 +21,7 @@ on:
     branches: [main]
     paths:
       - 'hetzner.nimble'
+      - 'specs/**'
       - 'nimbase.oapi.config.yaml'
       - '.github/workflows/nimbase.yml'
   schedule:
@@ -42,14 +44,17 @@ jobs:
 
       - uses: nimbase/nimbase-bot@v1
         with:
-          # token is optional; defaults to GITHUB_TOKEN. Pass secrets.BOT_TOKEN
-          # to re-trigger dependent test/docs workflows.
+          token: ${{ secrets.BOT_TOKEN }}
+          spec-source: hetzner.cloud
+          spec-file: specs/hetzner.cloud.json
           # Generate the client into a temp dir and copy the generated sources
           # over the repo root. hetzner.nimble is left untouched so the version
-          # bump keeps progressing across releases.
+          # bump keeps progressing across releases. --save-spec refreshes the
+          # committed baseline spec that oapi.diff compares against.
           gen-command: |
+            mkdir -p specs
             tmp="$(mktemp -d)"
-            nimbase oapi.gurugen "hetzner.cloud" "$tmp/hetzner"
+            nimbase oapi.gurugen "hetzner.cloud" "$tmp/hetzner" --save-spec:specs/hetzner.cloud.json
             cp -R "$tmp/hetzner/src" .
             cp -R "$tmp/hetzner/tests" .
             rm -rf "$tmp"

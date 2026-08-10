@@ -8,3 +8,4 @@ testresults/
 !/tests/*.nims
 .env
 endpoints.mdinit.sh
+init.sh
