@@ -1,17 +1,17 @@
 nimTitle	primary_ips	hetzner/primary_ips.html	module hetzner/primary_ips		0
-nim	GetPrimaryIpsResponse	hetzner/primary_ips.html#GetPrimaryIpsResponse	object GetPrimaryIpsResponse		12
-nim	PostPrimaryIpsResponse	hetzner/primary_ips.html#PostPrimaryIpsResponse	object PostPrimaryIpsResponse		23
-nim	GetPrimaryIpsIdResponse	hetzner/primary_ips.html#GetPrimaryIpsIdResponse	object GetPrimaryIpsIdResponse		26
-nim	PutPrimaryIpsIdResponse	hetzner/primary_ips.html#PutPrimaryIpsIdResponse	object PutPrimaryIpsIdResponse		32
-nim	sortId	hetzner/primary_ips.html#sortId	PrimaryIpSortOption.sortId		34
-nim	sortIdAsc	hetzner/primary_ips.html#sortIdAsc	PrimaryIpSortOption.sortIdAsc		34
-nim	sortIdDesc	hetzner/primary_ips.html#sortIdDesc	PrimaryIpSortOption.sortIdDesc		34
-nim	sortCreated	hetzner/primary_ips.html#sortCreated	PrimaryIpSortOption.sortCreated		34
-nim	sortCreatedAsc	hetzner/primary_ips.html#sortCreatedAsc	PrimaryIpSortOption.sortCreatedAsc		34
-nim	sortCreatedDesc	hetzner/primary_ips.html#sortCreatedDesc	PrimaryIpSortOption.sortCreatedDesc		34
-nim	PrimaryIpSortOption	hetzner/primary_ips.html#PrimaryIpSortOption	enum PrimaryIpSortOption		34
-nim	getPrimaryIps	hetzner/primary_ips.html#getPrimaryIps,HetznerClient,string,string,string,set[PrimaryIpSortOption]	proc getPrimaryIps(client: HetznerClient; name: string = default(string);\n              labelSelector: string = default(string);\n              ip: string = default(string); sort: set[PrimaryIpSortOption] = {}): Future[\n    GetPrimaryIpsResponse]		46
-nim	postPrimaryIps	hetzner/primary_ips.html#postPrimaryIps,HetznerClient,PostPrimaryIpsRequest	proc postPrimaryIps(client: HetznerClient; body: PostPrimaryIpsRequest): Future[\n    PostPrimaryIpsResponse]		62
-nim	getPrimaryIpsId	hetzner/primary_ips.html#getPrimaryIpsId,HetznerClient,int64	proc getPrimaryIpsId(client: HetznerClient; id: int64): Future[\n    GetPrimaryIpsIdResponse]		93
-nim	putPrimaryIpsId	hetzner/primary_ips.html#putPrimaryIpsId,HetznerClient,int64,PutPrimaryIpsIdRequest	proc putPrimaryIpsId(client: HetznerClient; id: int64; body: PutPrimaryIpsIdRequest): Future[\n    PutPrimaryIpsIdResponse]		105
-nim	deletePrimaryIpsId	hetzner/primary_ips.html#deletePrimaryIpsId,HetznerClient,int64	proc deletePrimaryIpsId(client: HetznerClient; id: int64): Future[AsyncResponse]		124
+nim	GetPrimaryIpsResponse	hetzner/primary_ips.html#GetPrimaryIpsResponse	object GetPrimaryIpsResponse		11
+nim	PostPrimaryIpsResponse	hetzner/primary_ips.html#PostPrimaryIpsResponse	object PostPrimaryIpsResponse		22
+nim	GetPrimaryIpsIdResponse	hetzner/primary_ips.html#GetPrimaryIpsIdResponse	object GetPrimaryIpsIdResponse		25
+nim	PutPrimaryIpsIdResponse	hetzner/primary_ips.html#PutPrimaryIpsIdResponse	object PutPrimaryIpsIdResponse		31
+nim	sortId	hetzner/primary_ips.html#sortId	PrimaryIpSortOption.sortId		33
+nim	sortIdAsc	hetzner/primary_ips.html#sortIdAsc	PrimaryIpSortOption.sortIdAsc		33
+nim	sortIdDesc	hetzner/primary_ips.html#sortIdDesc	PrimaryIpSortOption.sortIdDesc		33
+nim	sortCreated	hetzner/primary_ips.html#sortCreated	PrimaryIpSortOption.sortCreated		33
+nim	sortCreatedAsc	hetzner/primary_ips.html#sortCreatedAsc	PrimaryIpSortOption.sortCreatedAsc		33
+nim	sortCreatedDesc	hetzner/primary_ips.html#sortCreatedDesc	PrimaryIpSortOption.sortCreatedDesc		33
+nim	PrimaryIpSortOption	hetzner/primary_ips.html#PrimaryIpSortOption	enum PrimaryIpSortOption		33
+nim	getPrimaryIps	hetzner/primary_ips.html#getPrimaryIps,HetznerClient,string,string,string,set[PrimaryIpSortOption]	proc getPrimaryIps(client: HetznerClient; name: string = default(string);\n              labelSelector: string = default(string);\n              ip: string = default(string); sort: set[PrimaryIpSortOption] = {}): Future[\n    GetPrimaryIpsResponse]		45
+nim	postPrimaryIps	hetzner/primary_ips.html#postPrimaryIps,HetznerClient,PostPrimaryIpsRequest	proc postPrimaryIps(client: HetznerClient; body: PostPrimaryIpsRequest): Future[\n    PostPrimaryIpsResponse]		61
+nim	getPrimaryIpsId	hetzner/primary_ips.html#getPrimaryIpsId,HetznerClient,int64	proc getPrimaryIpsId(client: HetznerClient; id: int64): Future[\n    GetPrimaryIpsIdResponse]		92
+nim	putPrimaryIpsId	hetzner/primary_ips.html#putPrimaryIpsId,HetznerClient,int64,PutPrimaryIpsIdRequest	proc putPrimaryIpsId(client: HetznerClient; id: int64; body: PutPrimaryIpsIdRequest): Future[\n    PutPrimaryIpsIdResponse]		104
+nim	deletePrimaryIpsId	hetzner/primary_ips.html#deletePrimaryIpsId,HetznerClient,int64	proc deletePrimaryIpsId(client: HetznerClient; id: int64): Future[AsyncResponse]		123

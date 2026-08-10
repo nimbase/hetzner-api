@@ -1,5 +1,5 @@
 nimTitle	isos	hetzner/isos.html	module hetzner/isos		0
-nim	GetIsosResponse	hetzner/isos.html#GetIsosResponse	object GetIsosResponse		12
-nim	GetIsosIdResponse	hetzner/isos.html#GetIsosIdResponse	object GetIsosIdResponse		15
-nim	getIsos	hetzner/isos.html#getIsos,HetznerClient,string	proc getIsos(client: HetznerClient; name: string = default(string)): Future[\n    GetIsosResponse]		18
-nim	getIsosId	hetzner/isos.html#getIsosId,HetznerClient,int64	proc getIsosId(client: HetznerClient; id: int64): Future[GetIsosIdResponse]		31
+nim	GetIsosResponse	hetzner/isos.html#GetIsosResponse	object GetIsosResponse		11
+nim	GetIsosIdResponse	hetzner/isos.html#GetIsosIdResponse	object GetIsosIdResponse		14
+nim	getIsos	hetzner/isos.html#getIsos,HetznerClient,string	proc getIsos(client: HetznerClient; name: string = default(string)): Future[\n    GetIsosResponse]		17
+nim	getIsosId	hetzner/isos.html#getIsosId,HetznerClient,int64	proc getIsosId(client: HetznerClient; id: int64): Future[GetIsosIdResponse]		30

@@ -1,10 +1,10 @@
 nimTitle	networks	hetzner/networks.html	module hetzner/networks		0
-nim	GetNetworksResponse	hetzner/networks.html#GetNetworksResponse	object GetNetworksResponse		12
-nim	PostNetworksResponse	hetzner/networks.html#PostNetworksResponse	object PostNetworksResponse		21
-nim	GetNetworksIdResponse	hetzner/networks.html#GetNetworksIdResponse	object GetNetworksIdResponse		23
-nim	PutNetworksIdResponse	hetzner/networks.html#PutNetworksIdResponse	object PutNetworksIdResponse		28
-nim	getNetworks	hetzner/networks.html#getNetworks,HetznerClient,string,string	proc getNetworks(client: HetznerClient; name: string = default(string);\n            labelSelector: string = default(string)): Future[GetNetworksResponse]		32
-nim	postNetworks	hetzner/networks.html#postNetworks,HetznerClient,PostNetworksRequest	proc postNetworks(client: HetznerClient; body: PostNetworksRequest): Future[\n    PostNetworksResponse]		46
-nim	getNetworksId	hetzner/networks.html#getNetworksId,HetznerClient,int64	proc getNetworksId(client: HetznerClient; id: int64): Future[GetNetworksIdResponse]		67
-nim	putNetworksId	hetzner/networks.html#putNetworksId,HetznerClient,int64,PutNetworksIdRequest	proc putNetworksId(client: HetznerClient; id: int64; body: PutNetworksIdRequest): Future[\n    PutNetworksIdResponse]		78
-nim	deleteNetworksId	hetzner/networks.html#deleteNetworksId,HetznerClient,int64	proc deleteNetworksId(client: HetznerClient; id: int64): Future[AsyncResponse]		97
+nim	GetNetworksResponse	hetzner/networks.html#GetNetworksResponse	object GetNetworksResponse		11
+nim	PostNetworksResponse	hetzner/networks.html#PostNetworksResponse	object PostNetworksResponse		20
+nim	GetNetworksIdResponse	hetzner/networks.html#GetNetworksIdResponse	object GetNetworksIdResponse		22
+nim	PutNetworksIdResponse	hetzner/networks.html#PutNetworksIdResponse	object PutNetworksIdResponse		27
+nim	getNetworks	hetzner/networks.html#getNetworks,HetznerClient,string,string	proc getNetworks(client: HetznerClient; name: string = default(string);\n            labelSelector: string = default(string)): Future[GetNetworksResponse]		31
+nim	postNetworks	hetzner/networks.html#postNetworks,HetznerClient,PostNetworksRequest	proc postNetworks(client: HetznerClient; body: PostNetworksRequest): Future[\n    PostNetworksResponse]		45
+nim	getNetworksId	hetzner/networks.html#getNetworksId,HetznerClient,int64	proc getNetworksId(client: HetznerClient; id: int64): Future[GetNetworksIdResponse]		66
+nim	putNetworksId	hetzner/networks.html#putNetworksId,HetznerClient,int64,PutNetworksIdRequest	proc putNetworksId(client: HetznerClient; id: int64; body: PutNetworksIdRequest): Future[\n    PutNetworksIdResponse]		77
+nim	deleteNetworksId	hetzner/networks.html#deleteNetworksId,HetznerClient,int64	proc deleteNetworksId(client: HetznerClient; id: int64): Future[AsyncResponse]		96

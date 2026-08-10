@@ -1,22 +1,22 @@
 nimTitle	placement_groups	hetzner/placement_groups.html	module hetzner/placement_groups		0
-nim	GetPlacementGroupsResponse	hetzner/placement_groups.html#GetPlacementGroupsResponse	object GetPlacementGroupsResponse		12
-nim	PostPlacementGroupsResponse	hetzner/placement_groups.html#PostPlacementGroupsResponse	object PostPlacementGroupsResponse		19
-nim	GetPlacementGroupsIdResponse	hetzner/placement_groups.html#GetPlacementGroupsIdResponse	object GetPlacementGroupsIdResponse		22
-nim	PutPlacementGroupsIdResponse	hetzner/placement_groups.html#PutPlacementGroupsIdResponse	object PutPlacementGroupsIdResponse		27
-nim	sortId	hetzner/placement_groups.html#sortId	PlacementGroupSortOption.sortId		29
-nim	sortIdAsc	hetzner/placement_groups.html#sortIdAsc	PlacementGroupSortOption.sortIdAsc		29
-nim	sortIdDesc	hetzner/placement_groups.html#sortIdDesc	PlacementGroupSortOption.sortIdDesc		29
-nim	sortName	hetzner/placement_groups.html#sortName	PlacementGroupSortOption.sortName		29
-nim	sortNameAsc	hetzner/placement_groups.html#sortNameAsc	PlacementGroupSortOption.sortNameAsc		29
-nim	sortNameDesc	hetzner/placement_groups.html#sortNameDesc	PlacementGroupSortOption.sortNameDesc		29
-nim	sortCreated	hetzner/placement_groups.html#sortCreated	PlacementGroupSortOption.sortCreated		29
-nim	sortCreatedAsc	hetzner/placement_groups.html#sortCreatedAsc	PlacementGroupSortOption.sortCreatedAsc		29
-nim	sortCreatedDesc	hetzner/placement_groups.html#sortCreatedDesc	PlacementGroupSortOption.sortCreatedDesc		29
-nim	PlacementGroupSortOption	hetzner/placement_groups.html#PlacementGroupSortOption	enum PlacementGroupSortOption		29
-nim	typeSpread	hetzner/placement_groups.html#typeSpread	PlacementGroupTypeOption.typeSpread		40
-nim	PlacementGroupTypeOption	hetzner/placement_groups.html#PlacementGroupTypeOption	enum PlacementGroupTypeOption		40
-nim	getPlacementGroups	hetzner/placement_groups.html#getPlacementGroups,HetznerClient,set[PlacementGroupSortOption],string,string,set[PlacementGroupTypeOption]	proc getPlacementGroups(client: HetznerClient;\n                   sort: set[PlacementGroupSortOption] = {};\n                   name: string = default(string);\n                   labelSelector: string = default(string);\n                   type: set[PlacementGroupTypeOption] = {}): Future[\n    GetPlacementGroupsResponse]		48
-nim	postPlacementGroups	hetzner/placement_groups.html#postPlacementGroups,HetznerClient,PostPlacementGroupsRequest	proc postPlacementGroups(client: HetznerClient; body: PostPlacementGroupsRequest): Future[\n    PostPlacementGroupsResponse]		65
-nim	getPlacementGroupsId	hetzner/placement_groups.html#getPlacementGroupsId,HetznerClient,int64	proc getPlacementGroupsId(client: HetznerClient; id: int64): Future[\n    GetPlacementGroupsIdResponse]		76
-nim	putPlacementGroupsId	hetzner/placement_groups.html#putPlacementGroupsId,HetznerClient,int64,PutPlacementGroupsIdRequest	proc putPlacementGroupsId(client: HetznerClient; id: int64;\n                     body: PutPlacementGroupsIdRequest): Future[\n    PutPlacementGroupsIdResponse]		88
-nim	deletePlacementGroupsId	hetzner/placement_groups.html#deletePlacementGroupsId,HetznerClient,int64	proc deletePlacementGroupsId(client: HetznerClient; id: int64): Future[AsyncResponse]		107
+nim	GetPlacementGroupsResponse	hetzner/placement_groups.html#GetPlacementGroupsResponse	object GetPlacementGroupsResponse		11
+nim	PostPlacementGroupsResponse	hetzner/placement_groups.html#PostPlacementGroupsResponse	object PostPlacementGroupsResponse		18
+nim	GetPlacementGroupsIdResponse	hetzner/placement_groups.html#GetPlacementGroupsIdResponse	object GetPlacementGroupsIdResponse		21
+nim	PutPlacementGroupsIdResponse	hetzner/placement_groups.html#PutPlacementGroupsIdResponse	object PutPlacementGroupsIdResponse		26
+nim	sortId	hetzner/placement_groups.html#sortId	PlacementGroupSortOption.sortId		28
+nim	sortIdAsc	hetzner/placement_groups.html#sortIdAsc	PlacementGroupSortOption.sortIdAsc		28
+nim	sortIdDesc	hetzner/placement_groups.html#sortIdDesc	PlacementGroupSortOption.sortIdDesc		28
+nim	sortName	hetzner/placement_groups.html#sortName	PlacementGroupSortOption.sortName		28
+nim	sortNameAsc	hetzner/placement_groups.html#sortNameAsc	PlacementGroupSortOption.sortNameAsc		28
+nim	sortNameDesc	hetzner/placement_groups.html#sortNameDesc	PlacementGroupSortOption.sortNameDesc		28
+nim	sortCreated	hetzner/placement_groups.html#sortCreated	PlacementGroupSortOption.sortCreated		28
+nim	sortCreatedAsc	hetzner/placement_groups.html#sortCreatedAsc	PlacementGroupSortOption.sortCreatedAsc		28
+nim	sortCreatedDesc	hetzner/placement_groups.html#sortCreatedDesc	PlacementGroupSortOption.sortCreatedDesc		28
+nim	PlacementGroupSortOption	hetzner/placement_groups.html#PlacementGroupSortOption	enum PlacementGroupSortOption		28
+nim	typeSpread	hetzner/placement_groups.html#typeSpread	PlacementGroupTypeOption.typeSpread		39
+nim	PlacementGroupTypeOption	hetzner/placement_groups.html#PlacementGroupTypeOption	enum PlacementGroupTypeOption		39
+nim	getPlacementGroups	hetzner/placement_groups.html#getPlacementGroups,HetznerClient,set[PlacementGroupSortOption],string,string,set[PlacementGroupTypeOption]	proc getPlacementGroups(client: HetznerClient;\n                   sort: set[PlacementGroupSortOption] = {};\n                   name: string = default(string);\n                   labelSelector: string = default(string);\n                   type: set[PlacementGroupTypeOption] = {}): Future[\n    GetPlacementGroupsResponse]		47
+nim	postPlacementGroups	hetzner/placement_groups.html#postPlacementGroups,HetznerClient,PostPlacementGroupsRequest	proc postPlacementGroups(client: HetznerClient; body: PostPlacementGroupsRequest): Future[\n    PostPlacementGroupsResponse]		64
+nim	getPlacementGroupsId	hetzner/placement_groups.html#getPlacementGroupsId,HetznerClient,int64	proc getPlacementGroupsId(client: HetznerClient; id: int64): Future[\n    GetPlacementGroupsIdResponse]		75
+nim	putPlacementGroupsId	hetzner/placement_groups.html#putPlacementGroupsId,HetznerClient,int64,PutPlacementGroupsIdRequest	proc putPlacementGroupsId(client: HetznerClient; id: int64;\n                     body: PutPlacementGroupsIdRequest): Future[\n    PutPlacementGroupsIdResponse]		87
+nim	deletePlacementGroupsId	hetzner/placement_groups.html#deletePlacementGroupsId,HetznerClient,int64	proc deletePlacementGroupsId(client: HetznerClient; id: int64): Future[AsyncResponse]		106

@@ -1,36 +1,36 @@
 nimTitle	floating_ip_actions	hetzner/floating_ip_actions.html	module hetzner/floating_ip_actions		0
-nim	GetFloatingIpsIdActionsResponse	hetzner/floating_ip_actions.html#GetFloatingIpsIdActionsResponse	object GetFloatingIpsIdActionsResponse		12
-nim	PostFloatingIpsIdActionsAssignResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsAssignResponse	object PostFloatingIpsIdActionsAssignResponse		16
-nim	PostFloatingIpsIdActionsChangeDnsPtrResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsChangeDnsPtrResponse	object PostFloatingIpsIdActionsChangeDnsPtrResponse		21
-nim	PostFloatingIpsIdActionsChangeProtectionResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsChangeProtectionResponse	object PostFloatingIpsIdActionsChangeProtectionResponse		25
-nim	PostFloatingIpsIdActionsUnassignResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsUnassignResponse	object PostFloatingIpsIdActionsUnassignResponse		27
-nim	GetFloatingIpsIdActionsActionIdResponse	hetzner/floating_ip_actions.html#GetFloatingIpsIdActionsActionIdResponse	object GetFloatingIpsIdActionsActionIdResponse		29
-nim	sortId	hetzner/floating_ip_actions.html#sortId	FloatingIpActionSortOption.sortId		31
-nim	sortIdAsc	hetzner/floating_ip_actions.html#sortIdAsc	FloatingIpActionSortOption.sortIdAsc		31
-nim	sortIdDesc	hetzner/floating_ip_actions.html#sortIdDesc	FloatingIpActionSortOption.sortIdDesc		31
-nim	sortCommand	hetzner/floating_ip_actions.html#sortCommand	FloatingIpActionSortOption.sortCommand		31
-nim	sortCommandAsc	hetzner/floating_ip_actions.html#sortCommandAsc	FloatingIpActionSortOption.sortCommandAsc		31
-nim	sortCommandDesc	hetzner/floating_ip_actions.html#sortCommandDesc	FloatingIpActionSortOption.sortCommandDesc		31
-nim	sortStatus	hetzner/floating_ip_actions.html#sortStatus	FloatingIpActionSortOption.sortStatus		31
-nim	sortStatusAsc	hetzner/floating_ip_actions.html#sortStatusAsc	FloatingIpActionSortOption.sortStatusAsc		31
-nim	sortStatusDesc	hetzner/floating_ip_actions.html#sortStatusDesc	FloatingIpActionSortOption.sortStatusDesc		31
-nim	sortProgress	hetzner/floating_ip_actions.html#sortProgress	FloatingIpActionSortOption.sortProgress		31
-nim	sortProgressAsc	hetzner/floating_ip_actions.html#sortProgressAsc	FloatingIpActionSortOption.sortProgressAsc		31
-nim	sortProgressDesc	hetzner/floating_ip_actions.html#sortProgressDesc	FloatingIpActionSortOption.sortProgressDesc		31
-nim	sortStarted	hetzner/floating_ip_actions.html#sortStarted	FloatingIpActionSortOption.sortStarted		31
-nim	sortStartedAsc	hetzner/floating_ip_actions.html#sortStartedAsc	FloatingIpActionSortOption.sortStartedAsc		31
-nim	sortStartedDesc	hetzner/floating_ip_actions.html#sortStartedDesc	FloatingIpActionSortOption.sortStartedDesc		31
-nim	sortFinished	hetzner/floating_ip_actions.html#sortFinished	FloatingIpActionSortOption.sortFinished		31
-nim	sortFinishedAsc	hetzner/floating_ip_actions.html#sortFinishedAsc	FloatingIpActionSortOption.sortFinishedAsc		31
-nim	sortFinishedDesc	hetzner/floating_ip_actions.html#sortFinishedDesc	FloatingIpActionSortOption.sortFinishedDesc		31
-nim	FloatingIpActionSortOption	hetzner/floating_ip_actions.html#FloatingIpActionSortOption	enum FloatingIpActionSortOption		31
-nim	statusRunning	hetzner/floating_ip_actions.html#statusRunning	FloatingIpActionStatusOption.statusRunning		51
-nim	statusSuccess	hetzner/floating_ip_actions.html#statusSuccess	FloatingIpActionStatusOption.statusSuccess		51
-nim	statusError	hetzner/floating_ip_actions.html#statusError	FloatingIpActionStatusOption.statusError		51
-nim	FloatingIpActionStatusOption	hetzner/floating_ip_actions.html#FloatingIpActionStatusOption	enum FloatingIpActionStatusOption		51
-nim	getFloatingIpsIdActions	hetzner/floating_ip_actions.html#getFloatingIpsIdActions,HetznerClient,int64,set[FloatingIpActionSortOption],set[FloatingIpActionStatusOption]	proc getFloatingIpsIdActions(client: HetznerClient; id: int64;\n                        sort: set[FloatingIpActionSortOption] = {};\n                        status: set[FloatingIpActionStatusOption] = {}): Future[\n    GetFloatingIpsIdActionsResponse]		59
-nim	postFloatingIpsIdActionsAssign	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsAssign,HetznerClient,int64,PostFloatingIpsIdActionsAssignRequest	proc postFloatingIpsIdActionsAssign(client: HetznerClient; id: int64;\n                               body: PostFloatingIpsIdActionsAssignRequest): Future[\n    PostFloatingIpsIdActionsAssignResponse]		75
-nim	postFloatingIpsIdActionsChangeDnsPtr	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsChangeDnsPtr,HetznerClient,int64,PostFloatingIpsIdActionsChangeDnsPtrRequest	proc postFloatingIpsIdActionsChangeDnsPtr(client: HetznerClient; id: int64; body: PostFloatingIpsIdActionsChangeDnsPtrRequest): Future[\n    PostFloatingIpsIdActionsChangeDnsPtrResponse]		87
-nim	postFloatingIpsIdActionsChangeProtection	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsChangeProtection,HetznerClient,int64,PostFloatingIpsIdActionsChangeProtectionRequest	proc postFloatingIpsIdActionsChangeProtection(client: HetznerClient; id: int64;\n    body: PostFloatingIpsIdActionsChangeProtectionRequest): Future[\n    PostFloatingIpsIdActionsChangeProtectionResponse]		100
-nim	postFloatingIpsIdActionsUnassign	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsUnassign,HetznerClient,int64	proc postFloatingIpsIdActionsUnassign(client: HetznerClient; id: int64): Future[\n    PostFloatingIpsIdActionsUnassignResponse]		111
-nim	getFloatingIpsIdActionsActionId	hetzner/floating_ip_actions.html#getFloatingIpsIdActionsActionId,HetznerClient,int64,int64	proc getFloatingIpsIdActionsActionId(client: HetznerClient; id: int64;\n                                actionId: int64): Future[\n    GetFloatingIpsIdActionsActionIdResponse]		124
+nim	GetFloatingIpsIdActionsResponse	hetzner/floating_ip_actions.html#GetFloatingIpsIdActionsResponse	object GetFloatingIpsIdActionsResponse		11
+nim	PostFloatingIpsIdActionsAssignResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsAssignResponse	object PostFloatingIpsIdActionsAssignResponse		15
+nim	PostFloatingIpsIdActionsChangeDnsPtrResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsChangeDnsPtrResponse	object PostFloatingIpsIdActionsChangeDnsPtrResponse		20
+nim	PostFloatingIpsIdActionsChangeProtectionResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsChangeProtectionResponse	object PostFloatingIpsIdActionsChangeProtectionResponse		24
+nim	PostFloatingIpsIdActionsUnassignResponse	hetzner/floating_ip_actions.html#PostFloatingIpsIdActionsUnassignResponse	object PostFloatingIpsIdActionsUnassignResponse		26
+nim	GetFloatingIpsIdActionsActionIdResponse	hetzner/floating_ip_actions.html#GetFloatingIpsIdActionsActionIdResponse	object GetFloatingIpsIdActionsActionIdResponse		28
+nim	sortId	hetzner/floating_ip_actions.html#sortId	FloatingIpActionSortOption.sortId		30
+nim	sortIdAsc	hetzner/floating_ip_actions.html#sortIdAsc	FloatingIpActionSortOption.sortIdAsc		30
+nim	sortIdDesc	hetzner/floating_ip_actions.html#sortIdDesc	FloatingIpActionSortOption.sortIdDesc		30
+nim	sortCommand	hetzner/floating_ip_actions.html#sortCommand	FloatingIpActionSortOption.sortCommand		30
+nim	sortCommandAsc	hetzner/floating_ip_actions.html#sortCommandAsc	FloatingIpActionSortOption.sortCommandAsc		30
+nim	sortCommandDesc	hetzner/floating_ip_actions.html#sortCommandDesc	FloatingIpActionSortOption.sortCommandDesc		30
+nim	sortStatus	hetzner/floating_ip_actions.html#sortStatus	FloatingIpActionSortOption.sortStatus		30
+nim	sortStatusAsc	hetzner/floating_ip_actions.html#sortStatusAsc	FloatingIpActionSortOption.sortStatusAsc		30
+nim	sortStatusDesc	hetzner/floating_ip_actions.html#sortStatusDesc	FloatingIpActionSortOption.sortStatusDesc		30
+nim	sortProgress	hetzner/floating_ip_actions.html#sortProgress	FloatingIpActionSortOption.sortProgress		30
+nim	sortProgressAsc	hetzner/floating_ip_actions.html#sortProgressAsc	FloatingIpActionSortOption.sortProgressAsc		30
+nim	sortProgressDesc	hetzner/floating_ip_actions.html#sortProgressDesc	FloatingIpActionSortOption.sortProgressDesc		30
+nim	sortStarted	hetzner/floating_ip_actions.html#sortStarted	FloatingIpActionSortOption.sortStarted		30
+nim	sortStartedAsc	hetzner/floating_ip_actions.html#sortStartedAsc	FloatingIpActionSortOption.sortStartedAsc		30
+nim	sortStartedDesc	hetzner/floating_ip_actions.html#sortStartedDesc	FloatingIpActionSortOption.sortStartedDesc		30
+nim	sortFinished	hetzner/floating_ip_actions.html#sortFinished	FloatingIpActionSortOption.sortFinished		30
+nim	sortFinishedAsc	hetzner/floating_ip_actions.html#sortFinishedAsc	FloatingIpActionSortOption.sortFinishedAsc		30
+nim	sortFinishedDesc	hetzner/floating_ip_actions.html#sortFinishedDesc	FloatingIpActionSortOption.sortFinishedDesc		30
+nim	FloatingIpActionSortOption	hetzner/floating_ip_actions.html#FloatingIpActionSortOption	enum FloatingIpActionSortOption		30
+nim	statusRunning	hetzner/floating_ip_actions.html#statusRunning	FloatingIpActionStatusOption.statusRunning		50
+nim	statusSuccess	hetzner/floating_ip_actions.html#statusSuccess	FloatingIpActionStatusOption.statusSuccess		50
+nim	statusError	hetzner/floating_ip_actions.html#statusError	FloatingIpActionStatusOption.statusError		50
+nim	FloatingIpActionStatusOption	hetzner/floating_ip_actions.html#FloatingIpActionStatusOption	enum FloatingIpActionStatusOption		50
+nim	getFloatingIpsIdActions	hetzner/floating_ip_actions.html#getFloatingIpsIdActions,HetznerClient,int64,set[FloatingIpActionSortOption],set[FloatingIpActionStatusOption]	proc getFloatingIpsIdActions(client: HetznerClient; id: int64;\n                        sort: set[FloatingIpActionSortOption] = {};\n                        status: set[FloatingIpActionStatusOption] = {}): Future[\n    GetFloatingIpsIdActionsResponse]		58
+nim	postFloatingIpsIdActionsAssign	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsAssign,HetznerClient,int64,PostFloatingIpsIdActionsAssignRequest	proc postFloatingIpsIdActionsAssign(client: HetznerClient; id: int64;\n                               body: PostFloatingIpsIdActionsAssignRequest): Future[\n    PostFloatingIpsIdActionsAssignResponse]		74
+nim	postFloatingIpsIdActionsChangeDnsPtr	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsChangeDnsPtr,HetznerClient,int64,PostFloatingIpsIdActionsChangeDnsPtrRequest	proc postFloatingIpsIdActionsChangeDnsPtr(client: HetznerClient; id: int64; body: PostFloatingIpsIdActionsChangeDnsPtrRequest): Future[\n    PostFloatingIpsIdActionsChangeDnsPtrResponse]		86
+nim	postFloatingIpsIdActionsChangeProtection	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsChangeProtection,HetznerClient,int64,PostFloatingIpsIdActionsChangeProtectionRequest	proc postFloatingIpsIdActionsChangeProtection(client: HetznerClient; id: int64;\n    body: PostFloatingIpsIdActionsChangeProtectionRequest): Future[\n    PostFloatingIpsIdActionsChangeProtectionResponse]		99
+nim	postFloatingIpsIdActionsUnassign	hetzner/floating_ip_actions.html#postFloatingIpsIdActionsUnassign,HetznerClient,int64	proc postFloatingIpsIdActionsUnassign(client: HetznerClient; id: int64): Future[\n    PostFloatingIpsIdActionsUnassignResponse]		110
+nim	getFloatingIpsIdActionsActionId	hetzner/floating_ip_actions.html#getFloatingIpsIdActionsActionId,HetznerClient,int64,int64	proc getFloatingIpsIdActionsActionId(client: HetznerClient; id: int64;\n                                actionId: int64): Future[\n    GetFloatingIpsIdActionsActionIdResponse]		123

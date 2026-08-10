@@ -1,17 +1,17 @@
 nimTitle	floating_ips	hetzner/floating_ips.html	module hetzner/floating_ips		0
-nim	GetFloatingIpsResponse	hetzner/floating_ips.html#GetFloatingIpsResponse	object GetFloatingIpsResponse		12
-nim	PostFloatingIpsResponse	hetzner/floating_ips.html#PostFloatingIpsResponse	object PostFloatingIpsResponse		22
-nim	GetFloatingIpsIdResponse	hetzner/floating_ips.html#GetFloatingIpsIdResponse	object GetFloatingIpsIdResponse		25
-nim	PutFloatingIpsIdResponse	hetzner/floating_ips.html#PutFloatingIpsIdResponse	object PutFloatingIpsIdResponse		31
-nim	sortId	hetzner/floating_ips.html#sortId	FloatingIpSortOption.sortId		33
-nim	sortIdAsc	hetzner/floating_ips.html#sortIdAsc	FloatingIpSortOption.sortIdAsc		33
-nim	sortIdDesc	hetzner/floating_ips.html#sortIdDesc	FloatingIpSortOption.sortIdDesc		33
-nim	sortCreated	hetzner/floating_ips.html#sortCreated	FloatingIpSortOption.sortCreated		33
-nim	sortCreatedAsc	hetzner/floating_ips.html#sortCreatedAsc	FloatingIpSortOption.sortCreatedAsc		33
-nim	sortCreatedDesc	hetzner/floating_ips.html#sortCreatedDesc	FloatingIpSortOption.sortCreatedDesc		33
-nim	FloatingIpSortOption	hetzner/floating_ips.html#FloatingIpSortOption	enum FloatingIpSortOption		33
-nim	getFloatingIps	hetzner/floating_ips.html#getFloatingIps,HetznerClient,string,string,set[FloatingIpSortOption]	proc getFloatingIps(client: HetznerClient; name: string = default(string);\n               labelSelector: string = default(string);\n               sort: set[FloatingIpSortOption] = {}): Future[\n    GetFloatingIpsResponse]		44
-nim	postFloatingIps	hetzner/floating_ips.html#postFloatingIps,HetznerClient,PostFloatingIpsRequest	proc postFloatingIps(client: HetznerClient; body: PostFloatingIpsRequest): Future[\n    PostFloatingIpsResponse]		59
-nim	getFloatingIpsId	hetzner/floating_ips.html#getFloatingIpsId,HetznerClient,int64	proc getFloatingIpsId(client: HetznerClient; id: int64): Future[\n    GetFloatingIpsIdResponse]		75
-nim	putFloatingIpsId	hetzner/floating_ips.html#putFloatingIpsId,HetznerClient,int64,PutFloatingIpsIdRequest	proc putFloatingIpsId(client: HetznerClient; id: int64; body: PutFloatingIpsIdRequest): Future[\n    PutFloatingIpsIdResponse]		87
-nim	deleteFloatingIpsId	hetzner/floating_ips.html#deleteFloatingIpsId,HetznerClient,int64	proc deleteFloatingIpsId(client: HetznerClient; id: int64): Future[AsyncResponse]		102
+nim	GetFloatingIpsResponse	hetzner/floating_ips.html#GetFloatingIpsResponse	object GetFloatingIpsResponse		11
+nim	PostFloatingIpsResponse	hetzner/floating_ips.html#PostFloatingIpsResponse	object PostFloatingIpsResponse		21
+nim	GetFloatingIpsIdResponse	hetzner/floating_ips.html#GetFloatingIpsIdResponse	object GetFloatingIpsIdResponse		24
+nim	PutFloatingIpsIdResponse	hetzner/floating_ips.html#PutFloatingIpsIdResponse	object PutFloatingIpsIdResponse		30
+nim	sortId	hetzner/floating_ips.html#sortId	FloatingIpSortOption.sortId		32
+nim	sortIdAsc	hetzner/floating_ips.html#sortIdAsc	FloatingIpSortOption.sortIdAsc		32
+nim	sortIdDesc	hetzner/floating_ips.html#sortIdDesc	FloatingIpSortOption.sortIdDesc		32
+nim	sortCreated	hetzner/floating_ips.html#sortCreated	FloatingIpSortOption.sortCreated		32
+nim	sortCreatedAsc	hetzner/floating_ips.html#sortCreatedAsc	FloatingIpSortOption.sortCreatedAsc		32
+nim	sortCreatedDesc	hetzner/floating_ips.html#sortCreatedDesc	FloatingIpSortOption.sortCreatedDesc		32
+nim	FloatingIpSortOption	hetzner/floating_ips.html#FloatingIpSortOption	enum FloatingIpSortOption		32
+nim	getFloatingIps	hetzner/floating_ips.html#getFloatingIps,HetznerClient,string,string,set[FloatingIpSortOption]	proc getFloatingIps(client: HetznerClient; name: string = default(string);\n               labelSelector: string = default(string);\n               sort: set[FloatingIpSortOption] = {}): Future[\n    GetFloatingIpsResponse]		43
+nim	postFloatingIps	hetzner/floating_ips.html#postFloatingIps,HetznerClient,PostFloatingIpsRequest	proc postFloatingIps(client: HetznerClient; body: PostFloatingIpsRequest): Future[\n    PostFloatingIpsResponse]		58
+nim	getFloatingIpsId	hetzner/floating_ips.html#getFloatingIpsId,HetznerClient,int64	proc getFloatingIpsId(client: HetznerClient; id: int64): Future[\n    GetFloatingIpsIdResponse]		74
+nim	putFloatingIpsId	hetzner/floating_ips.html#putFloatingIpsId,HetznerClient,int64,PutFloatingIpsIdRequest	proc putFloatingIpsId(client: HetznerClient; id: int64; body: PutFloatingIpsIdRequest): Future[\n    PutFloatingIpsIdResponse]		86
+nim	deleteFloatingIpsId	hetzner/floating_ips.html#deleteFloatingIpsId,HetznerClient,int64	proc deleteFloatingIpsId(client: HetznerClient; id: int64): Future[AsyncResponse]		101

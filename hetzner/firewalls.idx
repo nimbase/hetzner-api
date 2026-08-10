@@ -1,21 +1,21 @@
 nimTitle	firewalls	hetzner/firewalls.html	module hetzner/firewalls		0
-nim	GetFirewallsResponse	hetzner/firewalls.html#GetFirewallsResponse	object GetFirewallsResponse		12
-nim	PostFirewallsResponse	hetzner/firewalls.html#PostFirewallsResponse	object PostFirewallsResponse		20
-nim	GetFirewallsIdResponse	hetzner/firewalls.html#GetFirewallsIdResponse	object GetFirewallsIdResponse		23
-nim	PutFirewallsIdResponse	hetzner/firewalls.html#PutFirewallsIdResponse	object PutFirewallsIdResponse		28
-nim	sortId	hetzner/firewalls.html#sortId	FirewallSortOption.sortId		30
-nim	sortIdAsc	hetzner/firewalls.html#sortIdAsc	FirewallSortOption.sortIdAsc		30
-nim	sortIdDesc	hetzner/firewalls.html#sortIdDesc	FirewallSortOption.sortIdDesc		30
-nim	sortName	hetzner/firewalls.html#sortName	FirewallSortOption.sortName		30
-nim	sortNameAsc	hetzner/firewalls.html#sortNameAsc	FirewallSortOption.sortNameAsc		30
-nim	sortNameDesc	hetzner/firewalls.html#sortNameDesc	FirewallSortOption.sortNameDesc		30
-nim	sortCreated	hetzner/firewalls.html#sortCreated	FirewallSortOption.sortCreated		30
-nim	sortCreatedAsc	hetzner/firewalls.html#sortCreatedAsc	FirewallSortOption.sortCreatedAsc		30
-nim	sortCreatedDesc	hetzner/firewalls.html#sortCreatedDesc	FirewallSortOption.sortCreatedDesc		30
-nim	FirewallSortOption	hetzner/firewalls.html#FirewallSortOption	enum FirewallSortOption		30
-nim	getFirewalls	hetzner/firewalls.html#getFirewalls,HetznerClient,set[FirewallSortOption],string,string	proc getFirewalls(client: HetznerClient; sort: set[FirewallSortOption] = {};\n             name: string = default(string);\n             labelSelector: string = default(string)): Future[\n    GetFirewallsResponse]		44
-nim	postFirewalls	hetzner/firewalls.html#postFirewalls,HetznerClient,PostFirewallsRequest	proc postFirewalls(client: HetznerClient; body: PostFirewallsRequest): Future[\n    PostFirewallsResponse]		59
-nim	getFirewallsId	hetzner/firewalls.html#getFirewallsId,HetznerClient,int64	proc getFirewallsId(client: HetznerClient; id: int64): Future[GetFirewallsIdResponse]		83
-nim	putFirewallsId	hetzner/firewalls.html#putFirewallsId,HetznerClient,int64,PutFirewallsIdRequest	proc putFirewallsId(client: HetznerClient; id: int64; body: PutFirewallsIdRequest): Future[\n    PutFirewallsIdResponse]		95
-nim	deleteFirewallsId	hetzner/firewalls.html#deleteFirewallsId,HetznerClient,int64	proc deleteFirewallsId(client: HetznerClient; id: int64): Future[AsyncResponse]		114
+nim	GetFirewallsResponse	hetzner/firewalls.html#GetFirewallsResponse	object GetFirewallsResponse		11
+nim	PostFirewallsResponse	hetzner/firewalls.html#PostFirewallsResponse	object PostFirewallsResponse		19
+nim	GetFirewallsIdResponse	hetzner/firewalls.html#GetFirewallsIdResponse	object GetFirewallsIdResponse		22
+nim	PutFirewallsIdResponse	hetzner/firewalls.html#PutFirewallsIdResponse	object PutFirewallsIdResponse		27
+nim	sortId	hetzner/firewalls.html#sortId	FirewallSortOption.sortId		29
+nim	sortIdAsc	hetzner/firewalls.html#sortIdAsc	FirewallSortOption.sortIdAsc		29
+nim	sortIdDesc	hetzner/firewalls.html#sortIdDesc	FirewallSortOption.sortIdDesc		29
+nim	sortName	hetzner/firewalls.html#sortName	FirewallSortOption.sortName		29
+nim	sortNameAsc	hetzner/firewalls.html#sortNameAsc	FirewallSortOption.sortNameAsc		29
+nim	sortNameDesc	hetzner/firewalls.html#sortNameDesc	FirewallSortOption.sortNameDesc		29
+nim	sortCreated	hetzner/firewalls.html#sortCreated	FirewallSortOption.sortCreated		29
+nim	sortCreatedAsc	hetzner/firewalls.html#sortCreatedAsc	FirewallSortOption.sortCreatedAsc		29
+nim	sortCreatedDesc	hetzner/firewalls.html#sortCreatedDesc	FirewallSortOption.sortCreatedDesc		29
+nim	FirewallSortOption	hetzner/firewalls.html#FirewallSortOption	enum FirewallSortOption		29
+nim	getFirewalls	hetzner/firewalls.html#getFirewalls,HetznerClient,set[FirewallSortOption],string,string	proc getFirewalls(client: HetznerClient; sort: set[FirewallSortOption] = {};\n             name: string = default(string);\n             labelSelector: string = default(string)): Future[\n    GetFirewallsResponse]		43
+nim	postFirewalls	hetzner/firewalls.html#postFirewalls,HetznerClient,PostFirewallsRequest	proc postFirewalls(client: HetznerClient; body: PostFirewallsRequest): Future[\n    PostFirewallsResponse]		58
+nim	getFirewallsId	hetzner/firewalls.html#getFirewallsId,HetznerClient,int64	proc getFirewallsId(client: HetznerClient; id: int64): Future[GetFirewallsIdResponse]		82
+nim	putFirewallsId	hetzner/firewalls.html#putFirewallsId,HetznerClient,int64,PutFirewallsIdRequest	proc putFirewallsId(client: HetznerClient; id: int64; body: PutFirewallsIdRequest): Future[\n    PutFirewallsIdResponse]		94
+nim	deleteFirewallsId	hetzner/firewalls.html#deleteFirewallsId,HetznerClient,int64	proc deleteFirewallsId(client: HetznerClient; id: int64): Future[AsyncResponse]		113
 heading	Call specific error codes	hetzner/firewalls.html#call-specific-error-codes	    Call specific error codes		0

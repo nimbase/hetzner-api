@@ -1,30 +1,30 @@
 nimTitle	image_actions	hetzner/image_actions.html	module hetzner/image_actions		0
-nim	GetImagesIdActionsResponse	hetzner/image_actions.html#GetImagesIdActionsResponse	object GetImagesIdActionsResponse		12
-nim	PostImagesIdActionsChangeProtectionResponse	hetzner/image_actions.html#PostImagesIdActionsChangeProtectionResponse	object PostImagesIdActionsChangeProtectionResponse		17
-nim	GetImagesIdActionsActionIdResponse	hetzner/image_actions.html#GetImagesIdActionsActionIdResponse	object GetImagesIdActionsActionIdResponse		19
-nim	sortId	hetzner/image_actions.html#sortId	ImageActionSortOption.sortId		21
-nim	sortIdAsc	hetzner/image_actions.html#sortIdAsc	ImageActionSortOption.sortIdAsc		21
-nim	sortIdDesc	hetzner/image_actions.html#sortIdDesc	ImageActionSortOption.sortIdDesc		21
-nim	sortCommand	hetzner/image_actions.html#sortCommand	ImageActionSortOption.sortCommand		21
-nim	sortCommandAsc	hetzner/image_actions.html#sortCommandAsc	ImageActionSortOption.sortCommandAsc		21
-nim	sortCommandDesc	hetzner/image_actions.html#sortCommandDesc	ImageActionSortOption.sortCommandDesc		21
-nim	sortStatus	hetzner/image_actions.html#sortStatus	ImageActionSortOption.sortStatus		21
-nim	sortStatusAsc	hetzner/image_actions.html#sortStatusAsc	ImageActionSortOption.sortStatusAsc		21
-nim	sortStatusDesc	hetzner/image_actions.html#sortStatusDesc	ImageActionSortOption.sortStatusDesc		21
-nim	sortProgress	hetzner/image_actions.html#sortProgress	ImageActionSortOption.sortProgress		21
-nim	sortProgressAsc	hetzner/image_actions.html#sortProgressAsc	ImageActionSortOption.sortProgressAsc		21
-nim	sortProgressDesc	hetzner/image_actions.html#sortProgressDesc	ImageActionSortOption.sortProgressDesc		21
-nim	sortStarted	hetzner/image_actions.html#sortStarted	ImageActionSortOption.sortStarted		21
-nim	sortStartedAsc	hetzner/image_actions.html#sortStartedAsc	ImageActionSortOption.sortStartedAsc		21
-nim	sortStartedDesc	hetzner/image_actions.html#sortStartedDesc	ImageActionSortOption.sortStartedDesc		21
-nim	sortFinished	hetzner/image_actions.html#sortFinished	ImageActionSortOption.sortFinished		21
-nim	sortFinishedAsc	hetzner/image_actions.html#sortFinishedAsc	ImageActionSortOption.sortFinishedAsc		21
-nim	sortFinishedDesc	hetzner/image_actions.html#sortFinishedDesc	ImageActionSortOption.sortFinishedDesc		21
-nim	ImageActionSortOption	hetzner/image_actions.html#ImageActionSortOption	enum ImageActionSortOption		21
-nim	statusRunning	hetzner/image_actions.html#statusRunning	ImageActionStatusOption.statusRunning		41
-nim	statusSuccess	hetzner/image_actions.html#statusSuccess	ImageActionStatusOption.statusSuccess		41
-nim	statusError	hetzner/image_actions.html#statusError	ImageActionStatusOption.statusError		41
-nim	ImageActionStatusOption	hetzner/image_actions.html#ImageActionStatusOption	enum ImageActionStatusOption		41
-nim	getImagesIdActions	hetzner/image_actions.html#getImagesIdActions,HetznerClient,int64,set[ImageActionSortOption],set[ImageActionStatusOption]	proc getImagesIdActions(client: HetznerClient; id: int64;\n                   sort: set[ImageActionSortOption] = {};\n                   status: set[ImageActionStatusOption] = {}): Future[\n    GetImagesIdActionsResponse]		49
-nim	postImagesIdActionsChangeProtection	hetzner/image_actions.html#postImagesIdActionsChangeProtection,HetznerClient,int64,PostImagesIdActionsChangeProtectionRequest	proc postImagesIdActionsChangeProtection(client: HetznerClient; id: int64; body: PostImagesIdActionsChangeProtectionRequest): Future[\n    PostImagesIdActionsChangeProtectionResponse]		65
-nim	getImagesIdActionsActionId	hetzner/image_actions.html#getImagesIdActionsActionId,HetznerClient,int64,int64	proc getImagesIdActionsActionId(client: HetznerClient; id: int64; actionId: int64): Future[\n    GetImagesIdActionsActionIdResponse]		78
+nim	GetImagesIdActionsResponse	hetzner/image_actions.html#GetImagesIdActionsResponse	object GetImagesIdActionsResponse		11
+nim	PostImagesIdActionsChangeProtectionResponse	hetzner/image_actions.html#PostImagesIdActionsChangeProtectionResponse	object PostImagesIdActionsChangeProtectionResponse		16
+nim	GetImagesIdActionsActionIdResponse	hetzner/image_actions.html#GetImagesIdActionsActionIdResponse	object GetImagesIdActionsActionIdResponse		18
+nim	sortId	hetzner/image_actions.html#sortId	ImageActionSortOption.sortId		20
+nim	sortIdAsc	hetzner/image_actions.html#sortIdAsc	ImageActionSortOption.sortIdAsc		20
+nim	sortIdDesc	hetzner/image_actions.html#sortIdDesc	ImageActionSortOption.sortIdDesc		20
+nim	sortCommand	hetzner/image_actions.html#sortCommand	ImageActionSortOption.sortCommand		20
+nim	sortCommandAsc	hetzner/image_actions.html#sortCommandAsc	ImageActionSortOption.sortCommandAsc		20
+nim	sortCommandDesc	hetzner/image_actions.html#sortCommandDesc	ImageActionSortOption.sortCommandDesc		20
+nim	sortStatus	hetzner/image_actions.html#sortStatus	ImageActionSortOption.sortStatus		20
+nim	sortStatusAsc	hetzner/image_actions.html#sortStatusAsc	ImageActionSortOption.sortStatusAsc		20
+nim	sortStatusDesc	hetzner/image_actions.html#sortStatusDesc	ImageActionSortOption.sortStatusDesc		20
+nim	sortProgress	hetzner/image_actions.html#sortProgress	ImageActionSortOption.sortProgress		20
+nim	sortProgressAsc	hetzner/image_actions.html#sortProgressAsc	ImageActionSortOption.sortProgressAsc		20
+nim	sortProgressDesc	hetzner/image_actions.html#sortProgressDesc	ImageActionSortOption.sortProgressDesc		20
+nim	sortStarted	hetzner/image_actions.html#sortStarted	ImageActionSortOption.sortStarted		20
+nim	sortStartedAsc	hetzner/image_actions.html#sortStartedAsc	ImageActionSortOption.sortStartedAsc		20
+nim	sortStartedDesc	hetzner/image_actions.html#sortStartedDesc	ImageActionSortOption.sortStartedDesc		20
+nim	sortFinished	hetzner/image_actions.html#sortFinished	ImageActionSortOption.sortFinished		20
+nim	sortFinishedAsc	hetzner/image_actions.html#sortFinishedAsc	ImageActionSortOption.sortFinishedAsc		20
+nim	sortFinishedDesc	hetzner/image_actions.html#sortFinishedDesc	ImageActionSortOption.sortFinishedDesc		20
+nim	ImageActionSortOption	hetzner/image_actions.html#ImageActionSortOption	enum ImageActionSortOption		20
+nim	statusRunning	hetzner/image_actions.html#statusRunning	ImageActionStatusOption.statusRunning		40
+nim	statusSuccess	hetzner/image_actions.html#statusSuccess	ImageActionStatusOption.statusSuccess		40
+nim	statusError	hetzner/image_actions.html#statusError	ImageActionStatusOption.statusError		40
+nim	ImageActionStatusOption	hetzner/image_actions.html#ImageActionStatusOption	enum ImageActionStatusOption		40
+nim	getImagesIdActions	hetzner/image_actions.html#getImagesIdActions,HetznerClient,int64,set[ImageActionSortOption],set[ImageActionStatusOption]	proc getImagesIdActions(client: HetznerClient; id: int64;\n                   sort: set[ImageActionSortOption] = {};\n                   status: set[ImageActionStatusOption] = {}): Future[\n    GetImagesIdActionsResponse]		48
+nim	postImagesIdActionsChangeProtection	hetzner/image_actions.html#postImagesIdActionsChangeProtection,HetznerClient,int64,PostImagesIdActionsChangeProtectionRequest	proc postImagesIdActionsChangeProtection(client: HetznerClient; id: int64; body: PostImagesIdActionsChangeProtectionRequest): Future[\n    PostImagesIdActionsChangeProtectionResponse]		64
+nim	getImagesIdActionsActionId	hetzner/image_actions.html#getImagesIdActionsActionId,HetznerClient,int64,int64	proc getImagesIdActionsActionId(client: HetznerClient; id: int64; actionId: int64): Future[\n    GetImagesIdActionsActionIdResponse]		77
