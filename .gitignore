@@ -7,5 +7,5 @@ testresults/
 !/tests/*.nim
 !/tests/*.nims
 .env
-endpoints.mdinit.sh
+endpoints.md
 init.sh
