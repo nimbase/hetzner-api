@@ -15,6 +15,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows: ['nimbase']   # re-run after the nimbase bot regenerates
+    types: [completed]
 
 permissions:
   contents: write

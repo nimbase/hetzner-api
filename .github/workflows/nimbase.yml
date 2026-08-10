@@ -5,13 +5,11 @@
 # schedule the bot first checks whether the upstream spec changed (via
 # `nimbase oapi.diff`, comparing against the committed specs/hetzner.cloud.json)
 # and only regenerates, bumps the version, commits, tags and releases when it
-# did. Testing happens in the repo's own test.yml workflow, which the bot's
-# commits re-trigger.
+# did. test.yml/docs.yml re-run via their own `workflow_run` trigger after this
+# workflow completes.
 #
 # Setup:
-#   1. Add a bot PAT (`repo` scope) as the `BOT_TOKEN` secret here. The bot
-#      commits with it so GitHub re-triggers the repo's test.yml/docs.yml
-#      workflows (pushes made with GITHUB_TOKEN do not).
+#   1. No secrets needed — the bot pushes with the per-run GITHUB_TOKEN.
 #   2. Ensure an initial tag exists matching the root hetzner.nimble version.
 
 name: nimbase
@@ -44,7 +42,6 @@ jobs:
 
       - uses: nimbase/nimbase-bot@v1
         with:
-          token: ${{ secrets.BOT_TOKEN }}
           spec-source: hetzner.cloud
           spec-file: specs/hetzner.cloud.json
           # Generate the client into a temp dir and copy the generated sources
