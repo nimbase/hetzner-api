@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.2"
+version       = "0.1.3"
 author        = "George Lemon"
 description   = "This is the official API documentation for the Public Hetzner Cloud."
 license       = "MIT"

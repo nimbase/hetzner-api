@@ -3,7 +3,6 @@
 # Auto-generated from OpenAPI 3.x specification
 # Nimbase CLI https://github.com/nimbase/nimbase
 #
-# Generated at: 2026-08-10T04:22:05+00:00
 # License: MIT
 import std/[json]
 import ./private/metaclient
